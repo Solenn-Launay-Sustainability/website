@@ -20,7 +20,8 @@
       "!**/node_modules",
       "!**/dist",
       "!**/public",
-      "!**/build"
+      "!**/build",
+      "!bun.lock"
     ]
   },
   "formatter": {

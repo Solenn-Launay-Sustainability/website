@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Solenn Launay - Sustainability advisor",
   description:
     "Sustainability advisory, workshops and roadmaps to help organisations reduce their environmental impacts and strengthen their business models.",
+  title: "Solenn Launay - Sustainability advisor",
 };
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased min-h-dvh mx-auto">{children}</body>
+      <body className="mx-auto min-h-dvh antialiased">{children}</body>
     </html>
   );
 }

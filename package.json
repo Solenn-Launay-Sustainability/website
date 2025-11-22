@@ -1,14 +1,4 @@
 {
-  "name": "website",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "bun --bun next dev",
-    "build": "bun --bun next build",
-    "start": "bun --bun next start",
-    "lint": "biome check",
-    "format": "biome format --write"
-  },
   "dependencies": {
     "@sanity/image-url": "^1.2.0",
     "@sanity/vision": "4",
@@ -20,7 +10,7 @@
     "styled-components": "6"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.0",
+    "@biomejs/biome": "2.3.7",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -28,5 +18,17 @@
     "babel-plugin-react-compiler": "1.0.0",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "name": "website",
+  "private": true,
+  "scripts": {
+    "build": "bun --bun next build",
+    "check": "biome check",
+    "check:fix": "biome check --fix",
+    "dev": "bun --bun next dev",
+    "format": "biome format --fix",
+    "lint": "biome lint --fix",
+    "start": "bun --bun next start"
+  },
+  "version": "0.1.0"
 }

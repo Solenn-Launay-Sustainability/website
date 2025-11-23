@@ -6,5 +6,9 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
 };
 
-const withNextIntl = createNextIntlPlugin();
+const withNextIntl = createNextIntlPlugin({
+  experimental: {
+    createMessagesDeclaration: "./messages/en-GB.json",
+  },
+});
 export default withNextIntl(nextConfig);

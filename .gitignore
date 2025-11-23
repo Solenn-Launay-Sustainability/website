@@ -13,6 +13,9 @@
 # testing
 /coverage
 
+# i18n
+messages/*.d.json.ts
+
 # next.js
 /.next/
 /out/

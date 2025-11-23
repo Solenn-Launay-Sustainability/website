@@ -26,7 +26,7 @@ Contenu :
 
   > I help organisations understand and anticipate bioclimatic risks, reduce their environmental impacts and enhance the robustness of their business models.
 
-* CTA principal : **“Book a call”** (ancre vers `#contact` ou Cal.com)
+* CTA principal : **“Get in touch”** (ancre vers `#contact`)
 * CTA secondaire : **“Discover my approach”** (ancre vers `#journey`)
 * ? Dans un coin : mini bloc contacts (tel, mail, LinkedIn) + badge
 
@@ -189,12 +189,14 @@ Sous-texte :
   * `60 to 90 min`
   * 1–2 phrases : overview, key messages, large audience.
   * Plus description avec des keypoints
+  * Examples: Climate Pitch, The Circular Economy Challenge (all with link)
 
 * **Card-based workshops**
 
   * `3h to 3h30`
   * 1–2 phrases : interactive, co-construction, serious game.
   * Plus description avec des keypoints
+  * Examples: Climate Fresk, The Biodiversity Collage, The Circular Economy Collage, The Food Collage (all with link)
 
 * **Bespoke workshops**
 
@@ -208,9 +210,71 @@ Sous-texte :
   * 1–2 phrases : short modules that can complement other formats (e.g. mini carbon assessment, mosaics of ecosystems).
   * Plus description avec des keypoints
 
+### My workshops & conferences (logos + links)
+
+* **Workshops**
+
+  * Climate Fresk
+  * The Biodiversity Collage
+  * The Circular Economy Collage
+  * The Food Collage
+
+* **Conferences**
+
+  * Climate Pitch
+  * The Circular Economy Challenge
+
+Layout :
+
+* Sur desktop : deux blocs horizontaux “Workshops” / “Conferences” avec une grille de logos.
+* Sur mobile : les blocs passent en colonne.
+
 ---
 
-## 6. They trusted me – `#testimonials`
+## 6. Next public events
+
+Objectif : permettre aux visiteurs de s’inscrire facilement aux prochains ateliers / conférences publics pour “la voir en action”.
+
+Sous-titre (exemple)
+> Next public event(s) to see me in action
+
+Contenu : liste de 0 à N événements.
+
+Pour chaque événement, prévoir :
+
+* **Title** : nom de l’atelier ou de la conférence
+
+    ex. `Climate Fresk – online workshop`
+
+* **Date** : format lisible (ex. `12 March 2026`)
+* **Time** : format lisible (ex. `6:00 PM – 9:30 PM CET`)
+* **Location** :
+
+    `Online` ou ville + lieu
+
+* **Short description** :
+
+    1–2 phrases max, ex. `A 3h30 interactive workshop to understand climate change causes and impacts, and explore levers for action.`
+
+* **Registration link** (bouton) :
+
+    `Register` / `Sign up` → lien vers la page d’inscription de l'event
+
+Layout :
+
+* Sur **desktop** : cartes d’événements en 2 colonnes si plusieurs dates, ou 1 colonne si 1 évènement.
+* Sur **mobile** : 1 carte par ligne, en scroll vertical.
+
+Comportement quand il n’y a pas d’évènement prévu :
+
+* soit ne pas afficher le bloc du tout,
+* soit afficher un petit texte :
+  > No public events are currently scheduled.  
+  > If you would like to organise a workshop or a conference, feel free to *get in touch* -> `#contact`.
+
+---
+
+## 7. They trusted me – `#testimonials`
 
 **Objectif** : preuve sociale.
 
@@ -220,7 +284,7 @@ Sous-texte :
 
 ---
 
-## 7. Contact & footer – `#contact`
+## 8. Contact & footer – `#contact`
 
 **Objectif** : pousser à l’action.
 
@@ -255,7 +319,7 @@ Sous-texte :
   * Email (cliquable)
   * LinkedIn
 
-Footer :
+### Footer
 
 * mention éco-conception : `This website is ecodesigned – Score: A`
 * © + lien mentions légales.

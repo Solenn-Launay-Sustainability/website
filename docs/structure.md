@@ -1,5 +1,56 @@
 # Documentation : Structure de la one-page
 
+## Charte graphique
+
+Couleur principale: `#377075`
+
+Palette de couleurs:
+
+* Dégradé 1: `#65B1B7`
+* Dégradé 2: `#AED7DA`
+* Contraste: `#795837`
+
+Police générale : `Calibri` (Body)
+
+Police du slogan : `Monotype Corsiva`
+
+### CSS variables (exemples)
+
+```css
+:root {
+  --radius: 0.625rem;
+  --radius-sm: calc(var(--radius) - 6px);
+  --radius-md: calc(var(--radius) - 4px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --background: #f5fafb;          /* fond général très clair */
+  --foreground: #163236;          /* texte principal */
+  --card: #ffffff;
+  --card-foreground: #163236;
+  --popover: #ffffff;
+  --popover-foreground: #163236;
+
+  --primary: #377075;             /* couleur principale */
+  --primary-foreground: #fdfefe;  /* texte sur bouton primary */
+
+  --secondary: #65b1b7;           /* dégradé 1 */
+  --secondary-foreground: #07353a;
+
+  --muted: #aed7da;               /* dégradé 2 – fonds doux */
+  --muted-foreground: #18454a;
+
+  --accent: #795837;              /* contraste chaud */
+  --accent-foreground: #fffaf1;
+
+  --destructive: #b63a3a;
+
+  --border: #d4e5e7;
+  --input: #d4e5e7;
+  --ring: #377075;
+}
+```
+
 ## Structure globale de la one-page
 
 **Sections & ancres :**
@@ -82,33 +133,6 @@ En HTML :
 * Titre : `Your sustainability journey with me`
 * Sous-titre : `From awareness to implementation`
 
-**Une version complète** → toutes les cartes détaillées comme dans ton visuel en carousel.
-
-1. **Raising awareness** + icon
-
-    > Engage & level up knowledge of your staff, management and stakeholders.
-
-2. **Identify main impacts** + icon
-
-    > Assess your main environmental impacts & risks, identify key opportunities.
-
-3. **Ideation of projects** + icon
-    > Unlock creativity in a structured framework to address main impacts & create opportunities.
-
-4. **Selection of targets** + icon
-
-    > Decide which projects are **relevant** and classify them by **priority**.
-
-5. **Roadmap for priority targets** + icon
-
-    > Identify **timeline**, **resources**, stakeholders, **costs**, steps, etc.
-
-6. **Implementation phase** + icon
-
-    > Follow up & support the **execution** of your “I.R.O.” projects.
-
-**Une version simplifiée** → quelques cartes plus courtes, condensées
-
 3 cartes : raw format desktop, carousel on mobile.
 
 1. **Raise awareness** + icon
@@ -125,12 +149,10 @@ En HTML :
 * Bloc "Roadmap & implementation" en dessous (idem version complète/courte) :
 
   1. Definition of the roadmap to reach your priority targets
-      > Choose relevant KPIs to measure progress
-        ... etc.
+      > Choose relevant KPIs to measure progress ... etc.
 
   2. Implementation of the roadmap, with a tailored follow-up
-    > I help your team
-      ... etc.
+      > I help your team ... etc.
 
 ---
 
@@ -143,7 +165,8 @@ Contenu :
 * Titre : `Topics & sectors I work on`
 * Sous-titre : petite phrase du type
 
-  > I cover a broad range of sustainability topics, directly or with trusted experts.
+  > Whatever your own business sector, below topics are, most probably, relevant for you.
+  > If you do work in below listed sectors, then we could have a specific approach with sectorial workshops, addressing transversal topics.
 
 Deux blocs :
 
@@ -163,7 +186,7 @@ Deux blocs :
 
 Petit texte en bas :
 
-> Climate, Circular Economy and Biodiversity are directly facilitated by me.
+> Climate, Circular Economy, Biodiversity and food are directly facilitated by me.
 > I work with a network of experts to thoroughly cover the other topics.
 
 ---
@@ -173,10 +196,10 @@ Petit texte en bas :
 **Objectif** : montrer les **4 grands formats**, sans surcharger avec un tableau.
 
 Titre de la section :
+  > We define what best suits your situation and objectives
 
-`We define what best suits your situation and objectives`
 Sous-texte :
-`Climate is one among various focus. Together we pick the topic and the format that best fits your needs.`
+  > Climate is one among various focus. Together we pick the topic and the format that best fits your needs.
 
 ### Cartes de formats
 
@@ -189,14 +212,14 @@ Sous-texte :
   * `60 to 90 min`
   * 1–2 phrases : overview, key messages, large audience.
   * Plus description avec des keypoints
-  * Examples: Climate Pitch, The Circular Economy Challenge (all with link)
+  * Examples: Add logo of Climate Pitch, The Circular Economy Challenge (all with link)
 
 * **Card-based workshops**
 
   * `3h to 3h30`
   * 1–2 phrases : interactive, co-construction, serious game.
   * Plus description avec des keypoints
-  * Examples: Climate Fresk, The Biodiversity Collage, The Circular Economy Collage, The Food Collage (all with link)
+  * Examples: Add logo of Climate Fresk, The Biodiversity Collage, The Circular Economy Collage, The Food Collage (all with link)
 
 * **Bespoke workshops**
 
@@ -279,7 +302,7 @@ Comportement quand il n’y a pas d’évènement prévu :
 **Objectif** : preuve sociale.
 
 * Titre : `They trusted me`
-* Bloc logos clients
+* Bloc logos clients avec liens
 * 1–2 témoignages texte
 
 ---
@@ -311,7 +334,6 @@ Comportement quand il n’y a pas d’évènement prévu :
 
   **Message de confirmation après envoi :**
       > Thanks for your message and interest. I will do my best to answer shortly. Solenn
-        On peut meme mettre des confetit :)
 
 * À côté ou en dessous :
 

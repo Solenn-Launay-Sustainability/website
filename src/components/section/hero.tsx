@@ -1,8 +1,8 @@
 import { Mail, Phone } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import heroBg from "@/assets/images/hero-bg.webp";
+import { EcoIndexBadge } from "@/components/eco-index-badge";
 import { Linkedin } from "@/components/icons/linkedin";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 async function Hero() {
@@ -32,7 +32,7 @@ async function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container z-10 flex gap-12 py-20 max-lg:flex-col md:py-32">
+      <div className="container z-10 grid items-start gap-12 py-20 md:py-32 lg:grid-cols-[1fr_auto]">
         {/* Main Content */}
         <div className="max-w-3xl space-y-8">
           <div className="space-y-4">
@@ -63,12 +63,8 @@ async function Hero() {
         </div>
 
         {/* Contact Card */}
-        <div className="max-h-fit space-y-4 rounded-lg border bg-card/80 p-6 shadow-lg backdrop-blur-sm sm:max-w-fit">
-          <Badge className="w-full justify-center py-2" variant="secondary">
-            {t("ecoDesigned")}
-          </Badge>
-
-          <div className="space-y-3 pt-2">
+        <div className="space-y-4 lg:sticky lg:top-24">
+          <div className="space-y-3 rounded-lg border bg-card/80 p-6 shadow-lg backdrop-blur-sm">
             <a
               className="flex items-center gap-3 text-sm transition-colors hover:text-primary"
               href={`tel:${contactInfo.phone
@@ -97,6 +93,7 @@ async function Hero() {
               <span>{t("linkedinProfile")}</span>
             </a>
           </div>
+          <EcoIndexBadge />
         </div>
       </div>
     </section>

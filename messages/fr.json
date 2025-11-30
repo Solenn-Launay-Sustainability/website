@@ -1,5 +1,7 @@
 {
   "HomePage": {
-    "title": "Bonjour!"
-  }
+    "title": "Bonjour!",
+    "welcomeMessage": ""
+  },
+  "subtitle": ""
 }

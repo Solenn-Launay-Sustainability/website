@@ -1,0 +1,109 @@
+# Charte graphique
+
+Couleur principale: `#377075`
+
+Palette de couleurs:
+
+* Dégradé 1: `#65B1B7`
+* Dégradé 2: `#AED7DA`
+* Contraste: `#795837`
+
+Police générale : `Calibri` (Body)
+
+Police du slogan : `Monotype Corsiva`
+
+## CSS variables (exemples)
+
+```css
+:root {
+  --background: oklch(1.0000 0 0);
+  --foreground: oklch(0.1591 0 0);
+  --card: oklch(0.8899 0.0297 201.8868);
+  --card-foreground: oklch(0.4133 0.0471 201.5798);
+  --popover: oklch(1.0000 0 0);
+  --popover-foreground: oklch(0.1591 0 0);
+  --primary: oklch(0.5088 0.0602 202.9945);
+  --primary-foreground: oklch(1.0000 0 0);
+  --secondary: oklch(0.7136 0.0759 202.1857);
+  --secondary-foreground: oklch(0.1591 0 0);
+  --muted: oklch(0.9641 0.0043 197.0859);
+  --muted-foreground: oklch(0.5110 0.0193 196.5621);
+  --accent: oklch(0.5088 0.0602 202.9945);
+  --accent-foreground: oklch(1.0000 0 0);
+  --destructive: oklch(0.5771 0.2152 27.3250);
+  --destructive-foreground: oklch(1.0000 0 0);
+  --border: oklch(0.8130 0.0251 203.0395);
+  --input: oklch(0.9641 0.0043 197.0859);
+  --ring: oklch(0.5088 0.0602 202.9945);
+  --chart-1: oklch(0.5088 0.0602 202.9945);
+  --chart-2: oklch(0.7136 0.0759 202.1857);
+  --chart-3: oklch(0.8509 0.0431 201.8825);
+  --chart-4: oklch(0.4873 0.0646 65.3187);
+  --chart-5: oklch(0.7892 0.0514 59.0768);
+  --font-sans: "Calibri", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --font-serif: "Monotype Corsiva", "Brush Script MT", "Times New Roman", serif;
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  --radius: 0.625rem;
+  --shadow-x: 0rem;
+  --shadow-y: 0.25rem;
+  --shadow-blur: 0.5rem;
+  --shadow-spread: 0rem;
+  --shadow-opacity: 0.1;
+  --shadow-color: #000000;
+  --shadow-2xs: 0rem 0.25rem 0.5rem 0rem hsl(0 0% 0% / 0.05);
+  --shadow-xs: 0rem 0.25rem 0.5rem 0rem hsl(0 0% 0% / 0.05);
+  --shadow-sm: 0rem 0.25rem 0.5rem 0rem hsl(0 0% 0% / 0.10), 0rem 1px 2px -1px hsl(0 0% 0% / 0.10);
+  --shadow: 0rem 0.25rem 0.5rem 0rem hsl(0 0% 0% / 0.10), 0rem 1px 2px -1px hsl(0 0% 0% / 0.10);
+  --shadow-md: 0rem 0.25rem 0.5rem 0rem hsl(0 0% 0% / 0.10), 0rem 2px 4px -1px hsl(0 0% 0% / 0.10);
+  --shadow-lg: 0rem 0.25rem 0.5rem 0rem hsl(0 0% 0% / 0.10), 0rem 4px 6px -1px hsl(0 0% 0% / 0.10);
+  --shadow-xl: 0rem 0.25rem 0.5rem 0rem hsl(0 0% 0% / 0.10), 0rem 8px 10px -1px hsl(0 0% 0% / 0.10);
+  --shadow-2xl: 0rem 0.25rem 0.5rem 0rem hsl(0 0% 0% / 0.25);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --font-serif: var(--font-serif);
+
+  --radius-sm: calc(var(--radius) - 6px);
+  --radius-md: calc(var(--radius) - 4px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --shadow-2xs: var(--shadow-2xs);
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow: var(--shadow);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+  --shadow-2xl: var(--shadow-2xl);
+}
+```

@@ -1,6 +1,11 @@
 {
-  "HomePage": {
-    "title": "Hello world!",
-    "welcomeMessage": "Welcome to our website!"
+  "Hero": {
+    "description": "I help organisations understand and anticipate bioclimatic risks, reduce their environmental impacts and enhance the robustness of their business models.",
+    "discoverMyApproach": "Discover my approach",
+    "ecoDesigned": "This website is ecodesigned",
+    "getInTouch": "Get in touch",
+    "linkedinProfile": "LinkedIn Profile",
+    "subtitle": "The engineer of your transition",
+    "title": "Your sustainability advisor - from <strong>Why</strong> to <strong>How</strong>"
   }
 }

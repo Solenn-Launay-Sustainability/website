@@ -13,7 +13,7 @@ async function Hero() {
   return (
     <section
       className="relative flex min-h-screen items-center justify-center px-4"
-      id={Hero.name}
+      id={Hero.name.toLowerCase()}
     >
       <div
         className="absolute inset-0 z-0"

@@ -5,6 +5,7 @@ import profile from "@/assets/images/profile.webp";
 import { EcoIndexBadge } from "@/components/eco-index-badge";
 import { Button } from "@/components/ui/button";
 import { ContactInfo } from "../contact-info";
+import { Text, Title } from "../ui/typography";
 
 async function Hero() {
   const t = await getTranslations("Hero");
@@ -31,21 +32,21 @@ async function Hero() {
         {/* Main Content */}
         <div className="max-w-3xl space-y-8">
           <div className="space-y-4">
-            <h1 className="font-bold text-4xl tracking-tight md:text-5xl lg:text-6xl">
+            <Title as="h1" className="tracking-tight" size="xxl">
               {t.rich("title", {
                 strong: (chunks: React.ReactNode) => (
                   <span className="text-primary">{chunks}</span>
                 ),
               })}
-            </h1>
-            <p className="font-light text-muted-foreground text-xl md:text-2xl">
+            </Title>
+            <Text className="font-light" size="xl" variant="muted">
               {t("subtitle")}
-            </p>
+            </Text>
           </div>
 
-          <p className="max-w-2xl text-foreground/90 text-lg leading-relaxed md:text-xl">
+          <Text className="max-w-2xl leading-relaxed" size="lg">
             {t("description")}
-          </p>
+          </Text>
 
           <div className="flex flex-col gap-4 sm:flex-row">
             <Button asChild size="lg">

@@ -1,18 +1,13 @@
-import { Mail, Phone } from "lucide-react";
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import heroBg from "@/assets/images/hero-bg.webp";
+import profile from "@/assets/images/profile.webp";
 import { EcoIndexBadge } from "@/components/eco-index-badge";
-import { Linkedin } from "@/components/icons/linkedin";
 import { Button } from "@/components/ui/button";
+import { ContactInfo } from "../contact-info";
 
 async function Hero() {
   const t = await getTranslations("Hero");
-
-  const contactInfo = {
-    email: "launaysolenn@yahoo.fr",
-    linkedin: "https://www.linkedin.com/in/solenn-launay/",
-    phone: "+44(0) 749.334.3282",
-  };
 
   return (
     <section
@@ -63,36 +58,15 @@ async function Hero() {
         </div>
 
         {/* Contact Card */}
-        <div className="space-y-4 lg:sticky lg:top-24">
-          <div className="space-y-3 rounded-lg border bg-card/80 p-6 shadow-lg backdrop-blur-sm">
-            <a
-              className="flex items-center gap-3 text-sm transition-colors hover:text-primary"
-              href={`tel:${contactInfo.phone
-                .replace(/\(0\)/, "")
-                .replace(/[^+\d]/g, "")}`}
-            >
-              <Phone className="size-4" />
-              <span>{contactInfo.phone}</span>
-            </a>
-
-            <a
-              className="flex items-center gap-3 text-sm transition-colors hover:text-primary"
-              href={`mailto:${contactInfo.email}`}
-            >
-              <Mail className="size-4" />
-              <span>{contactInfo.email}</span>
-            </a>
-
-            <a
-              className="flex items-center gap-3 text-sm transition-colors hover:text-primary"
-              href={contactInfo.linkedin}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <Linkedin className="size-4" />
-              <span>{t("linkedinProfile")}</span>
-            </a>
-          </div>
+        <div className="grid place-items-center space-y-4 lg:sticky lg:top-24">
+          <Image
+            alt="Profile"
+            className="rounded-lg border bg-card/80 shadow-lg backdrop-blur-sm"
+            height={300}
+            src={profile}
+            width={300}
+          />
+          <ContactInfo />
           <EcoIndexBadge />
         </div>
       </div>

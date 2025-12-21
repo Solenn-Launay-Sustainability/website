@@ -4,8 +4,8 @@ import heroBg from "@/assets/images/hero-bg.webp";
 import profile from "@/assets/images/profile.webp";
 import { EcoIndexBadge } from "@/components/eco-index-badge";
 import { Button } from "@/components/ui/button";
+import { Text, Title } from "@/components/ui/typography";
 import { ContactInfo } from "../contact-info";
-import { Text, Title } from "../ui/typography";
 
 async function Hero() {
   const t = await getTranslations("Hero");

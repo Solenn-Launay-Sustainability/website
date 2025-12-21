@@ -20,7 +20,7 @@ const titleVariants = cva("font-bold", {
   variants: {
     size: {
       default: "",
-      lg: "text-lg",
+      lg: "text-xl",
       sm: "text-sm",
       xl: "text-3xl md:text-4xl lg:text-5xl",
       xxl: "text-4xl tracking-tight md:text-5xl lg:text-6xl",

@@ -8,7 +8,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Text, Title } from "../ui/typography";
+import { Text, Title } from "@/components/ui/typography";
 
 export async function Why() {
   const t = await getTranslations("WhySection");

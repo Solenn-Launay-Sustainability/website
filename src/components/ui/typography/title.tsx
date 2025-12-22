@@ -19,6 +19,7 @@ const titleVariants = cva("font-bold", {
   },
   variants: {
     size: {
+      "2xl": "text-2xl",
       default: "",
       lg: "text-xl",
       sm: "text-sm",

@@ -1,5 +1,6 @@
 import { Hero } from "@/components/section/hero";
 import { Journey } from "@/components/section/journey";
+import { Topics } from "@/components/section/topics";
 import { Why } from "@/components/section/why";
 
 export default async function Home() {
@@ -8,6 +9,7 @@ export default async function Home() {
       <Hero />
       <Why />
       <Journey />
+      <Topics />
     </main>
   );
 }

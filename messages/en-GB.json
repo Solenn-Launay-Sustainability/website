@@ -1,4 +1,51 @@
 {
+  "FormatsSection": {
+    "examplesLabel": "Examples:",
+    "formats": {
+      "addOn": {
+        "bullet1": "Quick knowledge boosts",
+        "bullet2": "Flexible integration with other formats",
+        "bullet3": "Targeted topic deep-dives",
+        "description": "Short, focused modules that complement other formats—such as mini carbon assessments or ecosystem mosaics.",
+        "duration": "15 to 30 min",
+        "title": "Add-on modules"
+      },
+      "bespoke": {
+        "bullet1": "Custom-designed content",
+        "bullet2": "Sector-specific case studies",
+        "bullet3": "Actionable outputs for your organization",
+        "description": "Fully customized workshops designed around your specific challenges, industry context, and team dynamics.",
+        "duration": "Half-day",
+        "title": "Bespoke workshops"
+      },
+      "cardBased": {
+        "bullet1": "Hands-on collaborative learning",
+        "bullet2": "Visual thinking & problem-solving",
+        "bullet3": "Team building through shared goals",
+        "description": "Interactive, co-construction workshops using proven serious games to build collective understanding and commitment.",
+        "duration": "3h to 3h30",
+        "example1": "Climate Fresk",
+        "example2": "The Biodiversity Collage",
+        "example3": "The Circular Economy Collage",
+        "example4": "The Food Collage",
+        "title": "Card-based workshops"
+      },
+      "conference": {
+        "bullet1": "Tailored content for your audience",
+        "bullet2": "Interactive Q&A sessions",
+        "bullet3": "Compelling storytelling with data",
+        "description": "Engage large audiences with impactful presentations that deliver key sustainability messages and inspire action.",
+        "duration": "60 to 90 min",
+        "example1": "Climate Pitch",
+        "example2": "The Circular Economy Challenge",
+        "title": "Conference"
+      }
+    },
+    "header": {
+      "description": "Climate is one among various focus. Together we pick the topic and the format that best fits your needs.",
+      "title": "We define what best suits your situation and objectives"
+    }
+  },
   "Hero": {
     "description": "I help organisations understand and anticipate bioclimatic risks, reduce their environmental impacts and enhance the robustness of their business models.",
     "discoverMyApproach": "Discover my approach",

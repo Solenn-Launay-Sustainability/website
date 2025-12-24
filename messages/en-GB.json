@@ -64,6 +64,29 @@
     "step2Title": "Implementation of the roadmap, with a tailored follow-up",
     "title": "Your sustainability journey with me"
   },
+  "TestimonialsSection": {
+    "clients": {
+      "client1": "TechCorp International",
+      "client2": "Sustainable Foods Co.",
+      "client3": "EcoConstruct",
+      "client4": "Blue Ocean Initiative",
+      "client5": "GreenTech Solutions",
+      "client6": "Urban Industries"
+    },
+    "testimonials": {
+      "testimonial1": {
+        "author": "Sarah Johnson",
+        "quote": "Working with Solenn transformed how our organization thinks about sustainability. Her expertise and practical approach helped us turn environmental challenges into strategic opportunities.",
+        "role": "CEO, GreenTech Solutions"
+      },
+      "testimonial2": {
+        "author": "Michael Chen",
+        "quote": "The Climate Fresk workshop was eye-opening for our entire team. Solenn's facilitation skills made complex topics accessible and actionable. We now have a clear roadmap forward.",
+        "role": "Sustainability Director, Urban Industries"
+      }
+    },
+    "title": "They trusted me"
+  },
   "TopicsSection": {
     "bottomNote": "Climate, Circular Economy, Biodiversity and food are directly facilitated by me. I work with a network of experts to thoroughly cover the other topics.",
     "description": "Whatever your own business sector, below topics are, most probably, relevant for you. If you do work in below listed sectors, then we could have a specific approach with sectorial workshops, addressing transversal topics.",

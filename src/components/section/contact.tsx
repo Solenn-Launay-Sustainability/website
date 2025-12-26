@@ -1,12 +1,11 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useMemo } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { ContactInfo } from "@/components/contact-info";
-import { EcoIndexBadge } from "@/components/eco-index-badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -33,6 +32,7 @@ import {
 
 function Contact() {
   const t = useTranslations("ContactSection");
+  const locale = useLocale();
 
   const formSchema = useMemo(() => createContactFormSchema(t), [t]);
 
@@ -52,28 +52,35 @@ function Contact() {
 
   async function onSubmit(data: ContactFormData) {
     try {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-
-      toast.success("Thanks for your message and interest. - Solenn", {
-        description: (
-          <pre className="mt-2 w-fit overflow-x-auto rounded-md bg-slate-950 p-4">
-            <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-          </pre>
-        ),
+      const response = await fetch("/api/contact", {
+        body: JSON.stringify({
+          ...data,
+          locale,
+        }),
+        headers: { "Content-Type": "application/json" },
+        method: "POST",
       });
 
+      if (!response.ok) {
+        const errorData = await response.json();
+        console.error("API error:", errorData);
+        throw new Error("Failed to send message");
+      }
+
+      toast.success(t("form.successMessage"));
       form.reset();
-    } catch {
-      toast.error("An error occurred. Please try again.");
+    } catch (error) {
+      console.error("Submit error:", error);
+      toast.error(t("form.errorMessage"));
     }
   }
 
   return (
-    <section
-      className="container mx-auto max-w-5xl px-4 py-20 md:py-32"
-      id={Contact.name.toLowerCase()}
-    >
-      <div className="mb-12 space-y-4 text-center">
+    <section className="container mx-auto max-w-5xl px-4 py-20 md:py-32">
+      <div
+        className="mb-12 space-y-4 text-center"
+        id={Contact.name.toLowerCase()}
+      >
         <Title size="xl">{t("title")}</Title>
         <Text className="mx-auto max-w-2xl" size="lg" variant="muted">
           {t("description")}
@@ -255,9 +262,8 @@ function Contact() {
           </CardContent>
         </Card>
 
-        <div className="space-y-6 max-lg:mx-auto">
+        <div className="max-lg:mx-auto">
           <ContactInfo />
-          <EcoIndexBadge />
         </div>
       </div>
     </section>

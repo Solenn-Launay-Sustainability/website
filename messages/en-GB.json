@@ -1,8 +1,18 @@
 {
   "ContactSection": {
     "description": "Whether you already have a project in mind or simply want to explore options, feel free to reach out.",
+    "email": {
+      "email": "Email",
+      "message": "Message",
+      "name": "Name",
+      "reason": "Reason",
+      "subject": "New contact form submission",
+      "title": "New Contact Request",
+      "who": "Contact Type"
+    },
     "form": {
       "email": "Email",
+      "errorMessage": "Failed to send message. Please try again.",
       "firstName": "First Name",
       "lastName": "Last Name",
       "message": "Tell me more about your demand",
@@ -12,6 +22,7 @@
       "submit": "Send Message",
       "submitted": "Message sent",
       "submitting": "Sending...",
+      "successMessage": "Your message has been sent successfully!",
       "who": "Who are you?"
     },
     "reasonOptions": {

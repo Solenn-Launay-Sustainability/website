@@ -1,8 +1,11 @@
-import Script from "next/script";
-import { getTranslations } from "next-intl/server";
+"use client";
 
-export async function EcoIndexBadge() {
-  const t = await getTranslations("Hero");
+import Script from "next/script";
+import { useTranslations } from "next-intl";
+
+export function EcoIndexBadge() {
+  const t = useTranslations("Hero");
+
   return (
     <div className="flex w-full flex-col items-center gap-2 text-center text-sm">
       {t("ecoDesigned")}

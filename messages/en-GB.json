@@ -1,4 +1,43 @@
 {
+  "ContactSection": {
+    "description": "Whether you already have a project in mind or simply want to explore options, feel free to reach out.",
+    "form": {
+      "email": "Email",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "message": "Tell me more about your demand",
+      "messagePlaceholder": "The more information you provide, the clearer my answer will be.",
+      "reason": "Main reason for the contact request",
+      "selectPlaceholder": "Select an option",
+      "submit": "Send Message",
+      "submitted": "Message sent",
+      "submitting": "Sending...",
+      "who": "Who are you?"
+    },
+    "reasonOptions": {
+      "info": "Request information",
+      "question": "General question",
+      "workshop": "Interested in a workshop or conference"
+    },
+    "title": "Get in touch",
+    "validation": {
+      "emailInvalid": "Please enter a valid email address.",
+      "firstNameMax": "First name must be at most 50 characters.",
+      "firstNameMin": "First name must be at least 2 characters.",
+      "lastNameMax": "Last name must be at most 50 characters.",
+      "lastNameMin": "Last name must be at least 2 characters.",
+      "messageMax": "Message must be at most 1000 characters.",
+      "messageMin": "Message must be at least 20 characters.",
+      "reasonRequired": "Please select a reason for your contact.",
+      "whoRequired": "Please select who you are."
+    },
+    "whoOptions": {
+      "individual": "Individual person",
+      "other": "Others",
+      "private": "Private company",
+      "public": "Public company or authority"
+    }
+  },
   "FormatsSection": {
     "examplesLabel": "Examples:",
     "formats": {

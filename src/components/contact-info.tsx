@@ -1,9 +1,11 @@
+"use client";
+
 import { Mail, Phone } from "lucide-react";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 import { Linkedin } from "@/components/icons/linkedin";
 
-async function ContactInfo() {
-  const t = await getTranslations("Hero");
+function ContactInfo() {
+  const t = useTranslations("Hero");
 
   const contactInfo = {
     email: "launaysolenn@yahoo.fr",

@@ -34,11 +34,8 @@ const journeySteps = [
 async function Journey() {
   const t = await getTranslations("JourneySection");
   return (
-    <section
-      className="container mx-auto space-y-12 px-4 py-20 md:py-32"
-      id={Journey.name.toLowerCase()}
-    >
-      <div className="space-y-4 text-center">
+    <section className="container mx-auto space-y-12 px-4 py-20 md:py-32">
+      <div className="space-y-4 text-center" id={Journey.name.toLowerCase()}>
         <Title size="xl">{t("title")}</Title>
         <Text size="lg" variant="muted">
           {t("description")}

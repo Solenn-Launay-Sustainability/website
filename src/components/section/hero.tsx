@@ -27,9 +27,7 @@ async function Hero() {
         <div className="absolute inset-0 bg-linear-to-b from-background/60 via-background/80 to-background" />
       </div>
 
-      {/* Content */}
       <div className="container z-10 grid items-start gap-12 py-20 md:py-32 lg:grid-cols-[1fr_auto]">
-        {/* Main Content */}
         <div className="max-w-3xl space-y-8">
           <div className="space-y-4">
             <Title as="h1" className="tracking-tight" size="xxl">
@@ -58,14 +56,13 @@ async function Hero() {
           </div>
         </div>
 
-        {/* Contact Card */}
         <div className="grid place-items-center space-y-4 lg:sticky lg:top-24">
           <Image
             alt="Profile"
             className="rounded-lg border bg-card/80 shadow-lg backdrop-blur-sm"
-            height={300}
+            height={250}
             src={profile}
-            width={300}
+            width={250}
           />
           <ContactInfo />
           <EcoIndexBadge />

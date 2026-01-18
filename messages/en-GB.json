@@ -96,6 +96,9 @@
       "title": "We define what best suits your situation and objectives"
     }
   },
+  "footer": {
+    "rights": "All rights reserved."
+  },
   "Hero": {
     "description": "I help organisations understand and anticipate bioclimatic risks, reduce their environmental impacts and enhance the robustness of their business models.",
     "discoverMyApproach": "Discover my approach",

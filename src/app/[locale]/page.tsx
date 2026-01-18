@@ -1,4 +1,5 @@
 import { Contact } from "@/components/section/contact";
+import { Footer } from "@/components/section/footer";
 import { Formats } from "@/components/section/formats";
 import { Hero } from "@/components/section/hero";
 import { Journey } from "@/components/section/journey";
@@ -16,6 +17,7 @@ export default async function Home() {
       <Formats />
       <Testimonials />
       <Contact />
+      <Footer />
     </main>
   );
 }

@@ -28,8 +28,8 @@ async function Testimonials() {
   ];
 
   return (
-    <section className="bg-muted/30 py-20 md:py-32" id="testimonials">
-      <div className="container mx-auto space-y-12 px-4">
+    <section className="bg-muted/30 py-20 md:py-32">
+      <div className="container mx-auto space-y-12 px-4" id="testimonials">
         {/* Header */}
         <div className="text-center">
           <Title size="xl">{t("title")}</Title>

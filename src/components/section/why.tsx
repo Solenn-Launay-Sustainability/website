@@ -15,8 +15,8 @@ export async function Why() {
   const t = await getTranslations("WhySection");
 
   return (
-    <section className="bg-muted/30 px-4 py-20 md:py-32" id="why">
-      <div className="container mx-auto space-y-12">
+    <section className="bg-muted/30 px-4 py-20 md:py-32">
+      <div className="container mx-auto space-y-12" id="why">
         <div className="space-y-6">
           <Title size="xl">{t("why")}</Title>
           <div className="space-y-4 text-foreground/80 text-lg">

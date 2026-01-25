@@ -117,6 +117,15 @@
     "step2Title": "Implementation of the roadmap, with a tailored follow-up",
     "title": "Your sustainability journey with me"
   },
+  "Navbar": {
+    "contact": "Contact",
+    "formats": "Formats",
+    "home": "Home",
+    "journey": "Journey",
+    "testimonials": "Testimonials",
+    "topics": "Topics",
+    "why": "Why"
+  },
   "TestimonialsSection": {
     "clients": {
       "client1": "TechCorp International",

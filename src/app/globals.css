@@ -129,4 +129,14 @@
   html {
     scroll-behavior: smooth;
   }
+
+  #hero,
+  #why,
+  #journey,
+  #topics,
+  #formats,
+  #testimonials,
+  #contact {
+    scroll-margin-top: 4rem;
+  }
 }

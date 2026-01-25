@@ -1,7 +1,7 @@
 import { ZoomIn } from "lucide-react";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import risksOpportunities from "@/assets/images/risks-opportunities.png";
+import risksOpportunities from "@/assets/images/risks-opportunities.webp";
 import {
   Dialog,
   DialogContent,

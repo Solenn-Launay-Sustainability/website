@@ -1,5 +1,10 @@
 import { PlusCircle, Presentation, Users, Wrench } from "lucide-react";
 import { getTranslations } from "next-intl/server";
+import biodiversityCollage from "@/assets/images/biodiversity-collage.webp";
+import circularEconomy from "@/assets/images/circular-economy.webp";
+import climateFresk from "@/assets/images/climate-fresk.webp";
+import climatePitch from "@/assets/images/climate-pitch.svg";
+import foodFresk from "@/assets/images/food-fresk.svg";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -15,6 +20,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { Logo } from "../logo";
 
 async function Formats() {
   const t = await getTranslations("FormatsSection");
@@ -29,8 +35,16 @@ async function Formats() {
       description: t("formats.conference.description"),
       duration: t("formats.conference.duration"),
       examples: [
-        { name: t("formats.conference.example1"), url: "https://example.com" },
-        { name: t("formats.conference.example2"), url: "https://example.com" },
+        {
+          img: climatePitch,
+          name: t("formats.conference.example1"),
+          url: "https://planetonstage.org/en/pitches/climate-pitch",
+        },
+        {
+          img: circularEconomy,
+          name: t("formats.conference.example2"),
+          url: "https://www.lafresquedeleconomiecirculaire.com/en/home",
+        },
       ],
       Icon: Presentation,
       title: t("formats.conference.title"),
@@ -45,15 +59,25 @@ async function Formats() {
       duration: t("formats.cardBased.duration"),
       examples: [
         {
+          img: climateFresk,
           name: t("formats.cardBased.example1"),
-          url: "https://climatefresk.org",
+          url: "https://climatefresk.org/world/",
         },
         {
+          img: biodiversityCollage,
           name: t("formats.cardBased.example2"),
-          url: "https://biodiversitycollage.org",
+          url: "https://www.fresquedelabiodiversite.org/en.html",
         },
-        { name: t("formats.cardBased.example3"), url: "https://example.com" },
-        { name: t("formats.cardBased.example4"), url: "https://example.com" },
+        {
+          img: circularEconomy,
+          name: t("formats.cardBased.example3"),
+          url: "https://www.lafresquedeleconomiecirculaire.com/en/home",
+        },
+        {
+          img: foodFresk,
+          name: t("formats.cardBased.example4"),
+          url: "https://www.lafresquedeleconomiecirculaire.com/en/home",
+        },
       ],
       Icon: Users,
       title: t("formats.cardBased.title"),
@@ -135,15 +159,13 @@ async function Formats() {
                     <p className="font-medium text-sm">{t("examplesLabel")}</p>
                     <div className="flex flex-wrap gap-2">
                       {format.examples.map((example) => (
-                        <a
-                          className="rounded-full bg-muted px-3 py-1 text-xs transition-colors hover:bg-muted/80"
-                          href={example.url}
+                        <Logo
+                          alt={example.name}
                           key={example.name}
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
-                          {example.name}
-                        </a>
+                          name={example.name}
+                          src={example.img}
+                          url={example.url}
+                        />
                       ))}
                     </div>
                   </div>
@@ -195,17 +217,15 @@ async function Formats() {
                           <p className="font-medium text-sm">
                             {t("examplesLabel")}
                           </p>
-                          <div className="flex flex-wrap gap-2">
+                          <div className="flex flex-wrap gap-4">
                             {format.examples.map((example) => (
-                              <a
-                                className="rounded-full bg-muted px-3 py-1 text-xs transition-colors hover:bg-muted/80"
-                                href={example.url}
+                              <Logo
+                                alt={example.name}
                                 key={example.name}
-                                rel="noopener noreferrer"
-                                target="_blank"
-                              >
-                                {example.name}
-                              </a>
+                                name={example.name}
+                                src={example.img}
+                                url={example.url}
+                              />
                             ))}
                           </div>
                         </div>
@@ -215,8 +235,10 @@ async function Formats() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <div className="mt-3 flex gap-4">
+              <CarouselPrevious />
+              <CarouselNext />
+            </div>
           </Carousel>
         </div>
       </div>

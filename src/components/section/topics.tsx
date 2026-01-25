@@ -20,8 +20,8 @@ async function Topics() {
   ];
 
   return (
-    <section className="bg-muted/30 py-20 md:py-32" id="topics">
-      <div className="container mx-auto px-4">
+    <section className="bg-muted/30 py-20 md:py-32">
+      <div className="container mx-auto px-4" id="topics">
         <div className="mx-auto max-w-5xl space-y-12">
           <div className="space-y-4 text-center">
             <Title size="xl">{t("title")}</Title>

@@ -83,8 +83,8 @@ async function Formats() {
   ];
 
   return (
-    <section className="container mx-auto px-4 py-20 md:py-32" id="formats">
-      <div className="mx-auto max-w-6xl space-y-12">
+    <section className="container mx-auto px-4 py-20 md:py-32">
+      <div className="mx-auto max-w-6xl space-y-12" id="formats">
         {/* Header */}
         <div className="space-y-4 text-center">
           <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl">

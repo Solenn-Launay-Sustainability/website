@@ -13,7 +13,7 @@ async function Hero() {
   return (
     <section
       className="relative flex min-h-screen items-center justify-center px-4"
-      id={Hero.name.toLowerCase()}
+      id="hero"
     >
       <div
         className="absolute inset-0 z-0"
@@ -37,7 +37,7 @@ async function Hero() {
                 ),
               })}
             </Title>
-            <Text className="font-light" size="xl" variant="muted">
+            <Text className="font-light" size="xxl" variant="muted">
               {t("subtitle")}
             </Text>
           </div>

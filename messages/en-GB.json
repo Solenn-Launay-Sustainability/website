@@ -72,7 +72,7 @@
         "bullet1": "Hands-on collaborative learning",
         "bullet2": "Visual thinking & problem-solving",
         "bullet3": "Team building through shared goals",
-        "description": "Interactive, co-construction workshops using proven serious games to build collective understanding and commitment.",
+        "description": "Serious game workshops using collective intelligence to delve into systemic issues and trigger commitment.",
         "duration": "3h to 3h30",
         "example1": "Climate Fresk",
         "example2": "The Biodiversity Collage",
@@ -82,7 +82,7 @@
       },
       "conference": {
         "bullet1": "Tailored content for your audience",
-        "bullet2": "Interactive Q&A sessions",
+        "bullet2": "Interactive Q&A sessions (trivia style)",
         "bullet3": "Compelling storytelling with data",
         "description": "Engage large audiences with impactful presentations that deliver key sustainability messages and inspire action.",
         "duration": "60 to 90 min",
@@ -100,7 +100,7 @@
     "rights": "All rights reserved."
   },
   "Hero": {
-    "description": "I help organisations understand and anticipate bioclimatic risks, reduce their environmental impacts and enhance the robustness of their business models.",
+    "description": "I help organisations understand and anticipate bioclimatic risks, reduce their environmental impacts to enhance the robustness of their business models.",
     "discoverMyApproach": "Discover my approach",
     "ecoDesigned": "This website is ecodesigned",
     "getInTouch": "Get in touch",
@@ -111,7 +111,7 @@
   "JourneySection": {
     "description": "From awareness to implementation",
     "roadmapTitle": "Definition of the roadmap to reach your priority targets",
-    "step1Description": "Choose relevant KPIs to measure progress, set realistic timelines, and align your sustainability goals with business objectives. Together, we'll build a clear action plan that ensures accountability and drives measurable impact.",
+    "step1Description": "We choose relevant KPIs to measure progress, set realistic timelines, and align your sustainability goals with business objectives. Together, we'll build a clear action plan that ensures accountability and drives measurable impact.",
     "step1Title": "Your sustainability journey with me",
     "step2Description": "I help your team execute the strategy through regular check-ins, expert guidance, and adaptive support. We'll monitor progress, troubleshoot challenges, and celebrate milestones to keep momentum strong throughout your sustainability journey.",
     "step2Title": "Implementation of the roadmap, with a tailored follow-up",
@@ -141,8 +141,8 @@
     "title": "They trusted me"
   },
   "TopicsSection": {
-    "bottomNote": "Climate, Circular Economy, Biodiversity and food are directly facilitated by me. I work with a network of experts to thoroughly cover the other topics.",
-    "description": "Whatever your own business sector, below topics are, most probably, relevant for you. If you do work in below listed sectors, then we could have a specific approach with sectorial workshops, addressing transversal topics.",
+    "bottomNote": "Climate, Circular Economy, Biodiversity and Food are directly facilitated by me. I work with a network of experts to thoroughly cover the other topics.",
+    "description": "Whatever your own business sector, below topics are, most probably, relevant for you.\n Given my background, I have advanced expertise in industry, energy and construction sectors.\n For below listed sectors, There are specific sectoriel workshops, addressing transversal topics.\n This being said, if you work in other areas, I do have powerful tools that would help you embark your stakeholders and start your sustainability and circularity journey.",
     "sector": {
       "agriFood": "Agri-Food, Food, Water & Ocean",
       "constructionEnergy": "Construction & Energy",
@@ -161,9 +161,9 @@
   },
   "WhySection": {
     "altFigure": "Main risks from climate and environmental pressures and related opportunities",
-    "climate": "Climate and environmental challenges present significant risks to organizations across all sectors—ranging from legal and regulatory pressures to financial volatility, operational disruptions, and reputational damage.",
+    "climate": "Climate and environmental challenges present <strong>significant risks</strong> to organizations across all sectors—ranging from legal and regulatory pressures to financial volatility, operational disruptions, and reputational damage.",
     "figcaption": "Key risks and opportunities arising from climate and environmental pressures. Click to zoom.",
-    "however": "However, these same challenges also create unprecedented opportunities. Organizations that proactively address sustainability can unlock improved operational efficiency, drive innovation, enhance their market attractiveness, and access new funding sources.",
+    "however": "However, these same challenges also create <strong>unprecedented opportunities</strong>. Organizations that proactively address sustainability can unlock improved operational efficiency, drive innovation, enhance their market attractiveness, and access new funding sources.",
     "why": "Why sustainability matters for your organisation"
   }
 }

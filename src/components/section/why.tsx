@@ -9,21 +9,27 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Text, Title } from "@/components/ui/typography";
+import { Bold } from "../ui/typography/bold";
 
 export async function Why() {
   const t = await getTranslations("WhySection");
 
   return (
-    <section
-      className="bg-muted/30 px-4 py-20 md:py-32"
-      id={Why.name.toLowerCase()}
-    >
+    <section className="bg-muted/30 px-4 py-20 md:py-32" id="why">
       <div className="container mx-auto space-y-12">
         <div className="space-y-6">
           <Title size="xl">{t("why")}</Title>
           <div className="space-y-4 text-foreground/80 text-lg">
-            <Text>{t("climate")}</Text>
-            <Text>{t("however")}</Text>
+            <Text>
+              {t.rich("climate", {
+                strong: (chunks: React.ReactNode) => <Bold>{chunks}</Bold>,
+              })}
+            </Text>
+            <Text>
+              {t.rich("however", {
+                strong: (chunks: React.ReactNode) => <Bold>{chunks}</Bold>,
+              })}
+            </Text>
           </div>
         </div>
 

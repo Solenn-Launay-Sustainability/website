@@ -12,7 +12,7 @@ type TextProps<T extends TextTag = "p"> = React.ComponentPropsWithoutRef<T> &
     as?: T;
   };
 
-const textVariants = cva("", {
+const textVariants = cva("whitespace-pre-line", {
   defaultVariants: {
     size: "default",
     variant: "default",

@@ -48,7 +48,8 @@
         "noUndeclaredVariables": "error",
         "noUnusedImports": "warn",
         "noUnusedVariables": "error",
-        "useExhaustiveDependencies": "warn"
+        "useExhaustiveDependencies": "warn",
+        "useUniqueElementIds": "off"
       },
       "nursery": {
         "useSortedClasses": {

@@ -20,10 +20,7 @@ async function Topics() {
   ];
 
   return (
-    <section
-      className="bg-muted/30 py-20 md:py-32"
-      id={Topics.name.toLowerCase()}
-    >
+    <section className="bg-muted/30 py-20 md:py-32" id="topics">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-5xl space-y-12">
           <div className="space-y-4 text-center">

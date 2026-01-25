@@ -35,13 +35,12 @@ async function Journey() {
   const t = await getTranslations("JourneySection");
   return (
     <section className="container mx-auto space-y-12 px-4 py-20 md:py-32">
-      <div className="space-y-4 text-center" id={Journey.name.toLowerCase()}>
+      <div className="space-y-4 text-center" id="journey">
         <Title size="xl">{t("title")}</Title>
         <Text size="lg" variant="muted">
           {t("description")}
         </Text>
       </div>
-
       <div className="mx-auto w-full md:hidden">
         <Carousel>
           <CarouselContent>
@@ -67,7 +66,6 @@ async function Journey() {
           </div>
         </Carousel>
       </div>
-
       <div className="hidden gap-6 md:grid md:grid-cols-3">
         {journeySteps.map((step) => (
           <Card className="border-2" key={step.title}>
@@ -83,7 +81,6 @@ async function Journey() {
           </Card>
         ))}
       </div>
-
       {/* Roadmap & Implementation Details */}
       <div className="mt-16 space-y-8">
         <div className="grid gap-8 md:grid-cols-2">

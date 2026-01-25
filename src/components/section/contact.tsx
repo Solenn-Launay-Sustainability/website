@@ -77,10 +77,7 @@ function Contact() {
 
   return (
     <section className="container mx-auto max-w-5xl px-4 py-20 md:py-32">
-      <div
-        className="mb-12 space-y-4 text-center"
-        id={Contact.name.toLowerCase()}
-      >
+      <div className="mb-12 space-y-4 text-center" id="contact">
         <Title size="xl">{t("title")}</Title>
         <Text className="mx-auto max-w-2xl" size="lg" variant="muted">
           {t("description")}

@@ -83,10 +83,7 @@ async function Formats() {
   ];
 
   return (
-    <section
-      className="container mx-auto px-4 py-20 md:py-32"
-      id={Formats.name.toLowerCase()}
-    >
+    <section className="container mx-auto px-4 py-20 md:py-32" id="formats">
       <div className="mx-auto max-w-6xl space-y-12">
         {/* Header */}
         <div className="space-y-4 text-center">

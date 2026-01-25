@@ -29,52 +29,50 @@ async function Testimonials() {
 
   return (
     <section className="bg-muted/30 py-20 md:py-32" id="testimonials">
-      <div className="container mx-auto px-4">
-        <div className="mx-auto max-w-6xl space-y-12">
-          {/* Header */}
-          <div className="text-center">
-            <Title size="xl">{t("title")}</Title>
-          </div>
+      <div className="container mx-auto space-y-12 px-4">
+        {/* Header */}
+        <div className="text-center">
+          <Title size="xl">{t("title")}</Title>
+        </div>
 
-          {/* Client Logos */}
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-6">
-            {clients.map((client) => (
-              <div
-                className="flex items-center justify-center rounded-lg border bg-card p-6 transition-colors hover:border-primary/50"
-                key={client}
+        {/* Client Logos */}
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-6">
+          {clients.map((client) => (
+            <div
+              className="flex items-center justify-center rounded-lg border bg-card p-6 transition-colors hover:border-primary/50"
+              key={client}
+            >
+              <Text
+                className="text-center font-medium"
+                size="sm"
+                variant="muted"
               >
-                <Text
-                  className="text-center font-medium"
-                  size="sm"
-                  variant="muted"
-                >
-                  {client}
+                {client}
+              </Text>
+            </div>
+          ))}
+        </div>
+
+        {/* Testimonials */}
+        <div className="mt-12 grid gap-8 md:grid-cols-2">
+          {testimonials.map((testimonial) => (
+            <Card
+              className="border-none bg-transparent shadow-none"
+              key={testimonial.author}
+            >
+              <CardContent className="space-y-4 pt-6">
+                <Text className="italic" size="lg">
+                  "{testimonial.quote}"
                 </Text>
-              </div>
-            ))}
-          </div>
-
-          {/* Testimonials */}
-          <div className="mt-12 grid gap-8 md:grid-cols-2">
-            {testimonials.map((testimonial) => (
-              <Card
-                className="border-none bg-transparent shadow-none"
-                key={testimonial.author}
-              >
-                <CardContent className="space-y-4 pt-6">
-                  <Text className="italic" size="lg">
-                    "{testimonial.quote}"
+                <div className="border-t pt-4">
+                  <Text className="font-semibold">{testimonial.author}</Text>
+                  <Text size="sm" variant="muted">
+                    {testimonial.role}
                   </Text>
-                  <div className="border-t pt-4">
-                    <Text className="font-semibold">{testimonial.author}</Text>
-                    <Text size="sm" variant="muted">
-                      {testimonial.role}
-                    </Text>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

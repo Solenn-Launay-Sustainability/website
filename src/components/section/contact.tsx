@@ -76,7 +76,7 @@ function Contact() {
   }
 
   return (
-    <section className="container mx-auto max-w-5xl px-4 py-20 md:py-32">
+    <section className="container mx-auto px-4 py-20 md:py-32">
       <div className="mb-12 space-y-4 text-center" id="contact">
         <Title size="xl">{t("title")}</Title>
         <Text className="mx-auto max-w-2xl" size="lg" variant="muted">
@@ -84,7 +84,7 @@ function Contact() {
         </Text>
       </div>
 
-      <div className="grid gap-8 lg:grid-cols-[1fr_300px]">
+      <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1fr_300px]">
         <Card>
           <CardContent className="pt-6">
             <form className="space-y-6" onSubmit={form.handleSubmit(onSubmit)}>

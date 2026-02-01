@@ -1,0 +1,187 @@
+{
+  "ContactSection": {
+    "description": "Whether you already have a project in mind or simply want to explore options, feel free to reach out.",
+    "email": {
+      "email": "Email",
+      "message": "Message",
+      "name": "Name",
+      "reason": "Reason",
+      "subject": "New contact form submission",
+      "title": "New Contact Request",
+      "who": "Contact Type"
+    },
+    "form": {
+      "email": "Email",
+      "errorMessage": "Failed to send message. Please try again.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "message": "Tell me more about your demand",
+      "messagePlaceholder": "The more information you provide, the clearer my answer will be.",
+      "reason": "Main reason for the contact request",
+      "selectPlaceholder": "Select an option",
+      "submit": "Send Message",
+      "submitted": "Message sent",
+      "submitting": "Sending...",
+      "successMessage": "Your message has been sent successfully!",
+      "who": "Who are you?"
+    },
+    "reasonOptions": {
+      "info": "Request information",
+      "question": "General question",
+      "workshop": "Interested in a workshop or conference"
+    },
+    "title": "Get in touch",
+    "validation": {
+      "emailInvalid": "Please enter a valid email address.",
+      "firstNameMax": "First name must be at most 50 characters.",
+      "firstNameMin": "First name must be at least 2 characters.",
+      "lastNameMax": "Last name must be at most 50 characters.",
+      "lastNameMin": "Last name must be at least 2 characters.",
+      "messageMax": "Message must be at most 1000 characters.",
+      "messageMin": "Message must be at least 20 characters.",
+      "reasonRequired": "Please select a reason for your contact.",
+      "whoRequired": "Please select who you are."
+    },
+    "whoOptions": {
+      "individual": "Individual person",
+      "other": "Others",
+      "private": "Private company",
+      "public": "Public company or authority"
+    }
+  },
+  "FormatsSection": {
+    "examplesLabel": "Examples:",
+    "formats": {
+      "addOn": {
+        "bullet1": "Quick knowledge boosts",
+        "bullet2": "Flexible integration with other formats",
+        "bullet3": "Targeted topic deep-dives",
+        "description": "Short, focused modules that complement other formats—such as mini carbon assessments or ecosystem mosaics.",
+        "duration": "15 to 30 min",
+        "title": "Add-on modules"
+      },
+      "bespoke": {
+        "bullet1": "Custom-designed content",
+        "bullet2": "Sector-specific case studies",
+        "bullet3": "Actionable outputs for your organization",
+        "description": "Fully customized workshops designed around your specific challenges, industry context, and team dynamics.",
+        "duration": "Half-day",
+        "title": "Bespoke workshops"
+      },
+      "cardBased": {
+        "bullet1": "Hands-on collaborative learning",
+        "bullet2": "Visual thinking & problem-solving",
+        "bullet3": "Team building through shared goals",
+        "description": "Serious game workshops using collective intelligence to delve into systemic issues and trigger commitment.",
+        "duration": "3h to 3h30",
+        "example1": "Climate Fresk",
+        "example2": "The Biodiversity Collage",
+        "example3": "The Circular Economy Collage",
+        "example4": "The Food Collage",
+        "title": "Card-based workshops"
+      },
+      "conference": {
+        "bullet1": "Tailored content for your audience",
+        "bullet2": "Interactive Q&A sessions (trivia style)",
+        "bullet3": "Compelling storytelling with data",
+        "description": "Engage large audiences with impactful presentations that deliver key sustainability messages and inspire action.",
+        "duration": "60 to 90 min",
+        "example1": "Climate Pitch",
+        "example2": "The Circular Economy Challenge",
+        "title": "Conference"
+      }
+    },
+    "header": {
+      "description": "Climate is one among various focus.\n Together we pick the topic and the format that best fits your needs.",
+      "title": "We define what best suits your situation and objectives"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "Hero": {
+    "description": "I help organisations understand and anticipate bioclimatic risks, reduce their environmental impacts to enhance the robustness of their business models.",
+    "discoverMyApproach": "Discover my approach",
+    "ecoDesigned": "This website is ecodesigned",
+    "getInTouch": "Get in touch",
+    "linkedinProfile": "LinkedIn Profile",
+    "subtitle": "The engineer of your transition",
+    "title": "Your sustainability advisor - from <strong>Why</strong> to <strong>How</strong>"
+  },
+  "JourneySection": {
+    "description": "From awareness to implementation",
+    "roadmapTitle": "Definition of the roadmap to reach your priority targets",
+    "step1Description": "We choose relevant KPIs to measure progress, set realistic timelines, and align your sustainability goals with business objectives. Together, we'll build a clear action plan that ensures accountability and drives measurable impact.",
+    "step1Title": "Your sustainability journey with me",
+    "step2Description": "I help your team execute the strategy through regular check-ins, expert guidance, and adaptive support. We'll monitor progress, troubleshoot challenges, and celebrate milestones to keep momentum strong throughout your sustainability journey.",
+    "step2Title": "Implementation of the roadmap, with a tailored follow-up",
+    "title": "Your sustainability journey with me"
+  },
+  "Navbar": {
+    "contact": "Contact",
+    "formats": "Formats",
+    "home": "Home",
+    "journey": "Journey",
+    "testimonials": "Testimonials",
+    "topics": "Topics",
+    "why": "Why"
+  },
+  "TestimonialsSection": {
+    "clients": {
+      "client1": "EDF Renewables North America",
+      "client2": "Mobility",
+      "client3": "Orchestre Metropolitain",
+      "client4": "Parapluis FLAM UK",
+      "client5": "South East London, chamber of commerce",
+      "client6": "Fonds de solidarité FTQ",
+      "client7": "EDHEC Business School",
+      "client8": "Centre de services scolaire, Marguerite-Bourgeoys"
+    },
+    "testimonials": {
+      "testimonial1": {
+        "author": "Fonds FTQ",
+        "quote": "Great workshop to simplify and make hard concepts accessible. Helps support change as a first step. Identification of actions highly relevant to strategic planning"
+      },
+      "testimonial2": {
+        "author": "Audrey Haverkamp",
+        "position": "EDHEC Business School",
+        "quote": "Solenn's energy, smile and passion make the experience very enjoyable !"
+      },
+      "testimonial3": {
+        "author": "Caroline Banquet",
+        "position": "EDHEC",
+        "quote": "An eye-opening and collaborative workshop, where we learn, mourn (!) and support each other to find ways to take action and regain power to protect our very precious world."
+      },
+      "testimonial4": {
+        "quote": "A thought-provoking workshop, that takes you through different emotions, and finishes with concrete actions and commitments."
+      }
+    },
+    "title": "They trusted me"
+  },
+  "TopicsSection": {
+    "bottomNote": "Climate, Circular Economy, Biodiversity and Food are directly facilitated by me. I work with a network of experts to thoroughly cover the other topics.",
+    "description": "Whatever your own business sector, below topics are, most probably, relevant for you.\n Given my background, I have advanced expertise in <strong>industry, energy and construction</strong> sectors.\n For below listed sectors, there are specific sectoriel workshops, addressing transversal topics.\n This being said, if you work in other areas, I do have powerful tools that would help you embark your stakeholders and start your sustainability and circularity journey.",
+    "sector": {
+      "agriFood": "Agri-Food, Food, Water & Ocean",
+      "constructionEnergy": "Construction & Energy",
+      "digitalTextilesPlastics": "Digital, Textiles & Plastics",
+      "title": "Sectors"
+    },
+    "title": "Topics & sectors I work on",
+    "topic": {
+      "adaptation": "Adaptation",
+      "biodiversity": "Biodiversity",
+      "circularEconomy": "Circular Economy",
+      "climate": "Climate",
+      "planetaryBoundaries": "Planetary Boundaries",
+      "title": "Topics"
+    }
+  },
+  "WhySection": {
+    "altFigure": "Main risks from climate and environmental pressures and related opportunities",
+    "climate": "Climate and environmental challenges present <strong>significant risks</strong> to organizations across all sectors—ranging from legal and regulatory pressures to financial volatility, operational disruptions, and reputational damage.",
+    "figcaption": "Key risks and opportunities arising from climate and environmental pressures. Click to zoom.",
+    "however": "However, these same challenges also create <strong>unprecedented opportunities</strong>. Organizations that proactively address sustainability can unlock improved operational efficiency, drive innovation, enhance their market attractiveness, and access new funding sources.",
+    "why": "Why sustainability matters for your organisation"
+  }
+}

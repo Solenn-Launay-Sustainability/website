@@ -4,7 +4,7 @@ import biodiversityCollage from "@/assets/images/biodiversity-collage.webp";
 import circularEconomy from "@/assets/images/circular-economy.webp";
 import climateFresk from "@/assets/images/climate-fresk.webp";
 import climatePitch from "@/assets/images/climate-pitch.svg";
-import foodFresk from "@/assets/images/food-fresk.svg";
+import foodFresk from "@/assets/images/food-fresk.webp";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -21,6 +21,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Logo } from "../logo";
+import { Text, Title } from "../ui/typography";
 
 async function Formats() {
   const t = await getTranslations("FormatsSection");
@@ -111,12 +112,12 @@ async function Formats() {
       <div className="mx-auto max-w-6xl space-y-12" id="formats">
         {/* Header */}
         <div className="space-y-4 text-center">
-          <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl">
+          <Title as="h2" size="xl">
             {t("header.title")}
-          </h2>
-          <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+          </Title>
+          <Text className="mx-auto max-w-2xl" size="lg" variant="muted">
             {t("header.description")}
-          </p>
+          </Text>
         </div>
 
         {/* Format Cards - Desktop Grid */}

@@ -1,6 +1,7 @@
 import { Cloud, Globe, Leaf, Recycle, Shield } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Text, Title } from "@/components/ui/typography";
+import { Bold } from "../ui/typography/bold";
 
 async function Topics() {
   const t = await getTranslations("TopicsSection");
@@ -26,7 +27,9 @@ async function Topics() {
           <div className="space-y-4 text-center">
             <Title size="xl">{t("title")}</Title>
             <Text className="mx-auto max-w-3xl" size="lg" variant="muted">
-              {t("description")}
+              {t.rich("description", {
+                strong: (chunks: React.ReactNode) => <Bold>{chunks}</Bold>,
+              })}
             </Text>
           </div>
 

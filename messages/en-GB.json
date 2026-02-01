@@ -92,7 +92,7 @@
       }
     },
     "header": {
-      "description": "Climate is one among various focus. Together we pick the topic and the format that best fits your needs.",
+      "description": "Climate is one among various focus.\n Together we pick the topic and the format that best fits your needs.",
       "title": "We define what best suits your situation and objectives"
     }
   },
@@ -128,30 +128,39 @@
   },
   "TestimonialsSection": {
     "clients": {
-      "client1": "TechCorp International",
-      "client2": "Sustainable Foods Co.",
-      "client3": "EcoConstruct",
-      "client4": "Blue Ocean Initiative",
-      "client5": "GreenTech Solutions",
-      "client6": "Urban Industries"
+      "client1": "EDF Renewables North America",
+      "client2": "Mobility",
+      "client3": "Orchestre Metropolitain",
+      "client4": "Parapluis FLAM UK",
+      "client5": "South East London, chamber of commerce",
+      "client6": "Fonds de solidarité FTQ",
+      "client7": "EDHEC Business School",
+      "client8": "Centre de services scolaire, Marguerite-Bourgeoys"
     },
     "testimonials": {
       "testimonial1": {
-        "author": "Sarah Johnson",
-        "quote": "Working with Solenn transformed how our organization thinks about sustainability. Her expertise and practical approach helped us turn environmental challenges into strategic opportunities.",
-        "role": "CEO, GreenTech Solutions"
+        "author": "Fonds FTQ",
+        "quote": "Great workshop to simplify and make hard concepts accessible. Helps support change as a first step. Identification of actions highly relevant to strategic planning"
       },
       "testimonial2": {
-        "author": "Michael Chen",
-        "quote": "The Climate Fresk workshop was eye-opening for our entire team. Solenn's facilitation skills made complex topics accessible and actionable. We now have a clear roadmap forward.",
-        "role": "Sustainability Director, Urban Industries"
+        "author": "Audrey Haverkamp",
+        "position": "EDHEC Business School",
+        "quote": "Solenn's energy, smile and passion make the experience very enjoyable !"
+      },
+      "testimonial3": {
+        "author": "Caroline Banquet",
+        "position": "EDHEC",
+        "quote": "An eye-opening and collaborative workshop, where we learn, mourn (!) and support each other to find ways to take action and regain power to protect our very precious world."
+      },
+      "testimonial4": {
+        "quote": "A thought-provoking workshop, that takes you through different emotions, and finishes with concrete actions and commitments."
       }
     },
     "title": "They trusted me"
   },
   "TopicsSection": {
     "bottomNote": "Climate, Circular Economy, Biodiversity and Food are directly facilitated by me. I work with a network of experts to thoroughly cover the other topics.",
-    "description": "Whatever your own business sector, below topics are, most probably, relevant for you.\n Given my background, I have advanced expertise in industry, energy and construction sectors.\n For below listed sectors, There are specific sectoriel workshops, addressing transversal topics.\n This being said, if you work in other areas, I do have powerful tools that would help you embark your stakeholders and start your sustainability and circularity journey.",
+    "description": "Whatever your own business sector, below topics are, most probably, relevant for you.\n Given my background, I have advanced expertise in <strong>industry, energy and construction</strong> sectors.\n For below listed sectors, there are specific sectoriel workshops, addressing transversal topics.\n This being said, if you work in other areas, I do have powerful tools that would help you embark your stakeholders and start your sustainability and circularity journey.",
     "sector": {
       "agriFood": "Agri-Food, Food, Water & Ocean",
       "constructionEnergy": "Construction & Energy",

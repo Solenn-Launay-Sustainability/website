@@ -6,7 +6,7 @@ export async function Footer() {
   const t = await getTranslations("footer");
 
   return (
-    <footer className="container mx-auto my-20 flex justify-center">
+    <footer className="container mx-auto mt-20 mb-4 flex justify-center">
       <Text>
         &copy; {SITE_NAME} {new Date().getFullYear()}. {t("rights")}
       </Text>

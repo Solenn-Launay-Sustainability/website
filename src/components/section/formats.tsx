@@ -1,10 +1,11 @@
 import { PlusCircle, Presentation, Users, Wrench } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import biodiversityCollage from "@/assets/images/biodiversity-collage.webp";
-import circularEconomy from "@/assets/images/circular-economy.webp";
+import circularEconomy from "@/assets/images/circular-economy.png";
 import climateFresk from "@/assets/images/climate-fresk.webp";
 import climatePitch from "@/assets/images/climate-pitch.svg";
 import foodFresk from "@/assets/images/food-fresk.webp";
+import { FormatsHighlighter } from "@/components/section/formats-highlighter";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -44,9 +45,10 @@ async function Formats() {
         {
           img: circularEconomy,
           name: t("formats.conference.example2"),
-          url: "https://www.lafresquedeleconomiecirculaire.com/en/home",
+          url: "https://www.lafresquedeleconomiecirculaire.com/en/participate#section-defi",
         },
       ],
+      formatId: "conference",
       Icon: Presentation,
       title: t("formats.conference.title"),
     },
@@ -80,6 +82,7 @@ async function Formats() {
           url: "https://www.lafresquedeleconomiecirculaire.com/en/home",
         },
       ],
+      formatId: "card-based",
       Icon: Users,
       title: t("formats.cardBased.title"),
     },
@@ -91,6 +94,7 @@ async function Formats() {
       ],
       description: t("formats.bespoke.description"),
       duration: t("formats.bespoke.duration"),
+      formatId: "bespoke",
       Icon: Wrench,
       title: t("formats.bespoke.title"),
     },
@@ -102,6 +106,7 @@ async function Formats() {
       ],
       description: t("formats.addOn.description"),
       duration: t("formats.addOn.duration"),
+      formatId: "add-on",
       Icon: PlusCircle,
       title: t("formats.addOn.title"),
     },
@@ -110,6 +115,7 @@ async function Formats() {
   return (
     <section className="container mx-auto px-4 py-20 md:py-32">
       <div className="mx-auto max-w-6xl space-y-12" id="formats">
+        <FormatsHighlighter />
         {/* Header */}
         <div className="space-y-4 text-center">
           <Title as="h2" size="xl">
@@ -124,7 +130,10 @@ async function Formats() {
         <div className="hidden gap-6 md:grid md:grid-cols-2">
           {formats.map((format) => (
             <Card
-              className="border-2 transition-colors hover:border-primary/50"
+              className="scroll-mt-24 border-2 transition-all duration-300 hover:border-primary/60 hover:shadow-lg data-[highlighted=true]:border-primary data-[highlighted=true]:shadow-xl data-[highlighted=true]:ring-2 data-[highlighted=true]:ring-primary/35"
+              data-format-card={format.formatId}
+              data-highlighted="false"
+              id={`format-${format.formatId}`}
               key={format.title}
             >
               <CardHeader>
@@ -182,7 +191,11 @@ async function Formats() {
             <CarouselContent>
               {formats.map((format) => (
                 <CarouselItem key={format.title}>
-                  <Card className="border-2">
+                  <Card
+                    className="scroll-mt-24 border-2 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-lg data-[highlighted=true]:border-primary data-[highlighted=true]:shadow-xl data-[highlighted=true]:ring-2 data-[highlighted=true]:ring-primary/35"
+                    data-format-card={format.formatId}
+                    data-highlighted="false"
+                  >
                     <CardHeader>
                       <div className="flex items-start gap-4">
                         <div className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/10">

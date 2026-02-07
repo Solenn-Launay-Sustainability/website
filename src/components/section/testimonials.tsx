@@ -5,7 +5,7 @@ import edf from "@/assets/images/testimonials/edf.webp";
 import edhec from "@/assets/images/testimonials/edhec.png";
 import fondsSolidarite from "@/assets/images/testimonials/fonds-solidarite.png";
 import mobility from "@/assets/images/testimonials/mobility.webp";
-import om from "@/assets/images/testimonials/om.webp";
+import om from "@/assets/images/testimonials/om.png";
 import parapluie from "@/assets/images/testimonials/parapluie.webp";
 import southEast from "@/assets/images/testimonials/south-east.webp";
 import { Card, CardContent } from "@/components/ui/card";
@@ -36,10 +36,6 @@ async function Testimonials() {
 
   const clients = [
     {
-      image: parapluie,
-      name: t("clients.client1"),
-    },
-    {
       image: southEast,
       name: t("clients.client2"),
     },
@@ -63,6 +59,10 @@ async function Testimonials() {
     {
       image: centreService,
       name: t("clients.client8"),
+    },
+    {
+      image: parapluie,
+      name: t("clients.client1"),
     },
   ];
 

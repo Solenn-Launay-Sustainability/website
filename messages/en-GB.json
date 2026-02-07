@@ -106,10 +106,24 @@
     "getInTouch": "Get in touch",
     "linkedinProfile": "LinkedIn Profile",
     "subtitle": "The engineer of your transition",
-    "title": "Your sustainability advisor - from <strong>Why</strong> to <strong>How</strong>"
+    "title": "Your sustainability and circularity advisor - from <strong>Why</strong> to <strong>How</strong>"
   },
   "JourneySection": {
     "description": "From awareness to implementation",
+    "journeySteps": {
+      "establishRoadmap": {
+        "description": "Define priority targets, build a roadmap and support implementation.",
+        "title": "Establish & deliver roadmap"
+      },
+      "identifyIro": {
+        "description": "Assess your main environmental impacts & risks, identify key opportunities.",
+        "title": "Identify Impacts, Risks & Opportunities (I.R.O.)"
+      },
+      "raiseAwareness": {
+        "description": "Engage & level up knowledge of your staff, management, stakeholders…",
+        "title": "Raise awareness"
+      }
+    },
     "roadmapTitle": "Definition of the roadmap to reach your priority targets",
     "step1Description": "We choose relevant KPIs to measure progress, set realistic timelines, and align your sustainability goals with business objectives. Together, we'll build a clear action plan that ensures accountability and drives measurable impact.",
     "step1Title": "Your sustainability journey with me",
@@ -160,7 +174,7 @@
   },
   "TopicsSection": {
     "bottomNote": "Climate, Circular Economy, Biodiversity and Food are directly facilitated by me. I work with a network of experts to thoroughly cover the other topics.",
-    "description": "Whatever your own business sector, below topics are, most probably, relevant for you.\n Given my background, I have advanced expertise in <strong>industry, energy and construction</strong> sectors.\n For below listed sectors, there are specific sectoriel workshops, addressing transversal topics.\n This being said, if you work in other areas, I do have powerful tools that would help you embark your stakeholders and start your sustainability and circularity journey.",
+    "description": "Whatever your own business sector, below topics are, most probably, relevant for you.\n Given my background, I have advanced expertise in <strong>industry, energy and construction</strong> sectors.\n For below listed sectors, there are specific sectoriel workshops, addressing transversal topics.\n This being said, if you work in other areas, I do have powerful tools that would help you embark your stakeholders and start your <strong>sustainability and circularity journey.</strong>",
     "sector": {
       "agriFood": "Agri-Food, Food, Water & Ocean",
       "constructionEnergy": "Construction & Energy",

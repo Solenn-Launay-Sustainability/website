@@ -10,6 +10,7 @@ import parapluie from "@/assets/images/testimonials/parapluie.webp";
 import southEast from "@/assets/images/testimonials/south-east.webp";
 import { Card, CardContent } from "@/components/ui/card";
 import { Text, Title } from "@/components/ui/typography";
+import { Separator } from "../ui/separator";
 
 async function Testimonials() {
   const t = await getTranslations("TestimonialsSection");
@@ -17,19 +18,23 @@ async function Testimonials() {
   const testimonials = [
     {
       author: t("testimonials.testimonial1.author"),
+      id: "testimonial-1",
       quote: t("testimonials.testimonial1.quote"),
     },
     {
       author: t("testimonials.testimonial2.author"),
+      id: "testimonial-2",
       position: t("testimonials.testimonial2.position"),
       quote: t("testimonials.testimonial2.quote"),
     },
     {
       author: t("testimonials.testimonial3.author"),
+      id: "testimonial-3",
       position: t("testimonials.testimonial3.position"),
       quote: t("testimonials.testimonial3.quote"),
     },
     {
+      id: "testimonial-4",
       quote: t("testimonials.testimonial4.quote"),
     },
   ];
@@ -88,14 +93,15 @@ async function Testimonials() {
           {testimonials.map((testimonial) => (
             <Card
               className="border-none bg-transparent py-0 shadow-none"
-              key={testimonial.author}
+              key={testimonial.id}
             >
               <CardContent className="space-y-4 pt-6">
                 <Text className="italic" size="lg">
                   “{testimonial.quote}”
                 </Text>
+                <Separator />
                 {testimonial.author || testimonial.position ? (
-                  <div className="border-t pt-4">
+                  <>
                     {testimonial.author && (
                       <Text className="font-semibold">
                         {testimonial.author}
@@ -106,7 +112,7 @@ async function Testimonials() {
                         {testimonial.position}
                       </Text>
                     )}
-                  </div>
+                  </>
                 ) : null}
               </CardContent>
             </Card>

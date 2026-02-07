@@ -11,6 +11,7 @@ const sections = [
   { id: "journey", labelKey: "journey" },
   { id: "topics", labelKey: "topics" },
   { id: "formats", labelKey: "formats" },
+  { id: "scenario", labelKey: "scenario" },
   { id: "testimonials", labelKey: "testimonials" },
   { id: "contact", labelKey: "contact" },
 ] as const;

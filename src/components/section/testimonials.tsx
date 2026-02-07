@@ -42,10 +42,12 @@ async function Testimonials() {
   const clients = [
     {
       image: southEast,
+      link: "https://www.linkedin.com/posts/south-east-london-chamber-of-commerce_ceweek2025-selondonchamberofcommerce-chamberofcommerceevents-activity-7387532712519311360-aHuf/?rcm=ACoAAAJ8SjoB2t_TfZRNTBXwnFvBh_dGAb7IMdo",
       name: t("clients.client2"),
     },
     {
       image: om,
+      link: "https://www.linkedin.com/posts/solenn-launay_jourdelaterre-activity-7196687687704002560-jYst/?rcm=ACoAAAJ8SjoB2t_TfZRNTBXwnFvBh_dGAb7IMdo",
       name: t("clients.client3"),
     },
     {
@@ -54,6 +56,7 @@ async function Testimonials() {
     },
     {
       image: mobility,
+      link: "https://www.linkedin.com/posts/solenn-launay_fresque-economiecirculaire-canada-activity-7165794647250829313-xPG6/?rcm=ACoAAAJ8SjoB2t_TfZRNTBXwnFvBh_dGAb7IMdo",
       name: t("clients.client5"),
     },
     { image: edhec, name: t("clients.client7") },
@@ -63,6 +66,7 @@ async function Testimonials() {
     },
     {
       image: centreService,
+      link: "https://www.linkedin.com/posts/solenn-launay_durabilitaez-changementclimatique-responsabilitaezsociale-activity-7195155887156588544-yc0y/?rcm=ACoAAAJ8SjoB2t_TfZRNTBXwnFvBh_dGAb7IMdo",
       name: t("clients.client8"),
     },
     {
@@ -79,14 +83,29 @@ async function Testimonials() {
         </Title>
 
         <div className="grid grid-cols-2 place-items-center gap-6 md:grid-cols-3 lg:grid-cols-6">
-          {clients.map(({ name, image }) => (
-            <Image
-              alt={name}
-              className="max-h-12 overflow-hidden rounded-lg object-contain"
-              key={name}
-              src={image}
-            />
-          ))}
+          {clients.map(({ name, image, link }) =>
+            link ? (
+              <a
+                href={link}
+                key={name}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Image
+                  alt={name}
+                  className="max-h-12 overflow-hidden rounded-lg object-contain transition-transform duration-300 hover:-translate-y-1"
+                  src={image}
+                />
+              </a>
+            ) : (
+              <Image
+                alt={name}
+                className="max-h-12 overflow-hidden rounded-lg object-contain"
+                key={name}
+                src={image}
+              />
+            ),
+          )}
         </div>
 
         <div className="mt-12 grid gap-8 md:grid-cols-2">

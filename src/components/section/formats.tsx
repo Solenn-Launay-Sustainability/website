@@ -17,6 +17,7 @@ import {
 import {
   Carousel,
   CarouselContent,
+  CarouselDots,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
@@ -249,8 +250,9 @@ async function Formats() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="mt-3 flex gap-4">
+            <div className="mt-3 grid grid-cols-[auto_1fr_auto] items-center gap-4">
               <CarouselPrevious />
+              <CarouselDots />
               <CarouselNext />
             </div>
           </Carousel>

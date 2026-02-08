@@ -7,7 +7,7 @@ export async function Footer() {
 
   return (
     <footer className="container mx-auto mt-20 mb-4 flex justify-center">
-      <Text>
+      <Text size="sm" variant="muted">
         &copy; {SITE_NAME} {new Date().getFullYear()}. {t("rights")}
       </Text>
     </footer>

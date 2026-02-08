@@ -28,6 +28,7 @@
     "reasonOptions": {
       "info": "Request information",
       "question": "General question",
+      "requestService": "Sustainability or circularity advisory services",
       "workshop": "Interested in a workshop or conference"
     },
     "title": "Get in touch",
@@ -130,8 +131,8 @@
       }
     },
     "roadmapTitle": "Definition of the roadmap to reach your priority targets",
-    "step1Description": "We choose relevant KPIs to measure progress, set realistic timelines, and align your sustainability goals with business objectives. Together, we'll build a clear action plan that ensures accountability and drives measurable impact.",
-    "step1Title": "Your sustainability journey with me",
+    "step1Description": "With main stakeholders, we choose relevant KPIs to measure progress, set realistic timelines to align your sustainability goals with business objectives.\n Together, we'll build a clear action plan that ensures accountability and drives measurable impact. We choose relevant KPIs to measure progress, set realistic timelines, and align your sustainability goals with business objectives.\n Together, we'll build a clear action plan that ensures accountability and drives measurable impact.",
+    "step1Title": "Definition of the roadmap to reach your priority targets",
     "step2Description": "I help your team execute the strategy through regular check-ins, expert guidance, and adaptive support. We'll monitor progress, troubleshoot challenges, and celebrate milestones to keep momentum strong throughout your sustainability journey.",
     "step2Title": "Implementation of the roadmap, with a tailored follow-up",
     "title": "Your sustainability journey with me"

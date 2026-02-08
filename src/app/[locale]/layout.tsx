@@ -3,7 +3,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import ogImage from "@/app/opengraph-image.png";
 import { Navbar } from "@/components/navbar";
 import { Toaster } from "@/components/ui/sonner";
@@ -16,17 +16,21 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const requestedLocale = (await params).locale;
-  const locale = hasLocale(routing.locales, requestedLocale)
-    ? requestedLocale
-    : routing.defaultLocale;
 
-  if (locale !== requestedLocale) {
+  if (!hasLocale(routing.locales, requestedLocale)) {
     notFound();
   }
 
-  const t = await getTranslations("Metadata");
+  const locale = requestedLocale;
+  const t = await getTranslations({ locale, namespace: "Metadata" });
   const title = t("title");
   const description = t("description");
 
@@ -52,13 +56,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function LocaleLayout({ children, params }: Props) {
   const requestedLocale = (await params).locale;
-  const locale = hasLocale(routing.locales, requestedLocale)
-    ? requestedLocale
-    : routing.defaultLocale;
 
-  if (locale !== requestedLocale) {
+  if (!hasLocale(routing.locales, requestedLocale)) {
     notFound();
   }
+
+  const locale = requestedLocale;
+
+  setRequestLocale(locale);
 
   return (
     <html lang={locale}>

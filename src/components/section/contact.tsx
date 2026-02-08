@@ -211,6 +211,9 @@ function Contact() {
                           <SelectItem value="workshop">
                             {t("reasonOptions.workshop")}
                           </SelectItem>
+                          <SelectItem value="requestService">
+                            {t("reasonOptions.requestService")}
+                          </SelectItem>
                         </SelectContent>
                       </Select>
                       <FieldError errors={[fieldState.error]} />

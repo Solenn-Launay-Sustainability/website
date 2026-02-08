@@ -19,15 +19,16 @@ async function Hero() {
       className="relative flex min-h-screen items-center justify-center px-4"
       id="hero"
     >
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(${heroBg.src})`,
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
-      >
+      <div className="absolute inset-0 z-0">
+        <Image
+          alt=""
+          className="object-cover"
+          fill
+          priority
+          quality={65}
+          sizes="100vw"
+          src={heroBg}
+        />
         <div className="absolute inset-0 bg-linear-to-b from-background/60 via-background/80 to-background" />
       </div>
 

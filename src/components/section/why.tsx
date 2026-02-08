@@ -51,7 +51,7 @@ export async function Why() {
               </figcaption>
             </figure>
           </DialogTrigger>
-          <DialogContent className="max-h-[90vh] w-[98%] max-w-6xl overflow-auto rounded-md p-2">
+          <DialogContent className="max-h-[90vh] overflow-auto rounded-md p-2">
             <DialogTitle className="sr-only">{t("altFigure")}</DialogTitle>
             <Image
               alt={t("altFigure")}

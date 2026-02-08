@@ -28,6 +28,7 @@
     "reasonOptions": {
       "info": "Request information",
       "question": "General question",
+      "requestService": "Sustainability or circularity advisory services",
       "workshop": "Interested in a workshop or conference"
     },
     "title": "Get in touch",
@@ -99,6 +100,11 @@
   "footer": {
     "rights": "All rights reserved."
   },
+  "GallerySection": {
+    "description": "A glimpse into real workshop moments: focused teams, active collaboration, and concrete ideas taking shape.",
+    "photoAlt": "Workshop gallery photo {index}",
+    "title": "Moments in Action"
+  },
   "Hero": {
     "description": "I help organisations understand and anticipate bioclimatic risks, reduce their environmental impacts to enhance the robustness of their business models.",
     "discoverMyApproach": "Discover my approach",
@@ -106,20 +112,40 @@
     "getInTouch": "Get in touch",
     "linkedinProfile": "LinkedIn Profile",
     "subtitle": "The engineer of your transition",
-    "title": "Your sustainability advisor - from <strong>Why</strong> to <strong>How</strong>"
+    "title": "Your sustainability and circularity advisor - from <strong>Why</strong> to <strong>How</strong>"
   },
   "JourneySection": {
     "description": "From awareness to implementation",
+    "journeySteps": {
+      "establishRoadmap": {
+        "description": "Define priority targets, build a roadmap and support implementation.",
+        "title": "Establish & deliver roadmap"
+      },
+      "identifyIro": {
+        "description": "Assess your main environmental impacts & risks, identify key opportunities.",
+        "title": "Identify Impacts, Risks & Opportunities (I.R.O.)"
+      },
+      "raiseAwareness": {
+        "description": "Engage & level up knowledge of your staff, management, stakeholders…",
+        "title": "Raise awareness"
+      }
+    },
     "roadmapTitle": "Definition of the roadmap to reach your priority targets",
-    "step1Description": "We choose relevant KPIs to measure progress, set realistic timelines, and align your sustainability goals with business objectives. Together, we'll build a clear action plan that ensures accountability and drives measurable impact.",
-    "step1Title": "Your sustainability journey with me",
+    "step1Description": "With main stakeholders, we choose relevant KPIs to measure progress, set realistic timelines to align your sustainability goals with business objectives.\n Together, we'll build a clear action plan that ensures accountability and drives measurable impact. We choose relevant KPIs to measure progress, set realistic timelines, and align your sustainability goals with business objectives.\n Together, we'll build a clear action plan that ensures accountability and drives measurable impact.",
+    "step1Title": "Definition of the roadmap to reach your priority targets",
     "step2Description": "I help your team execute the strategy through regular check-ins, expert guidance, and adaptive support. We'll monitor progress, troubleshoot challenges, and celebrate milestones to keep momentum strong throughout your sustainability journey.",
     "step2Title": "Implementation of the roadmap, with a tailored follow-up",
     "title": "Your sustainability journey with me"
   },
+  "Metadata": {
+    "description": "Sustainability advisory, workshops and roadmaps to help organisations reduce their environmental impacts and strengthen their business models.",
+    "siteName": "Solenn Launay",
+    "title": "Solenn Launay - Sustainability advisor"
+  },
   "Navbar": {
     "contact": "Contact",
     "formats": "Formats",
+    "gallery": "Gallery",
     "home": "Home",
     "journey": "Journey",
     "testimonials": "Testimonials",
@@ -131,7 +157,7 @@
       "client1": "EDF Renewables North America",
       "client2": "Mobility",
       "client3": "Orchestre Metropolitain",
-      "client4": "Parapluis FLAM UK",
+      "client4": "Parapluie FLAM UK",
       "client5": "South East London, chamber of commerce",
       "client6": "Fonds de solidarité FTQ",
       "client7": "EDHEC Business School",
@@ -149,7 +175,7 @@
       },
       "testimonial3": {
         "author": "Caroline Banquet",
-        "position": "EDHEC",
+        "position": "EDHEC Business School",
         "quote": "An eye-opening and collaborative workshop, where we learn, mourn (!) and support each other to find ways to take action and regain power to protect our very precious world."
       },
       "testimonial4": {
@@ -160,7 +186,7 @@
   },
   "TopicsSection": {
     "bottomNote": "Climate, Circular Economy, Biodiversity and Food are directly facilitated by me. I work with a network of experts to thoroughly cover the other topics.",
-    "description": "Whatever your own business sector, below topics are, most probably, relevant for you.\n Given my background, I have advanced expertise in <strong>industry, energy and construction</strong> sectors.\n For below listed sectors, there are specific sectoriel workshops, addressing transversal topics.\n This being said, if you work in other areas, I do have powerful tools that would help you embark your stakeholders and start your sustainability and circularity journey.",
+    "description": "Whatever your own business sector, below topics are, most probably, relevant for you.\n Given my background, I have advanced expertise in <strong>industry, energy and construction</strong> sectors.\n For below listed sectors, there are specific sectoriel workshops, addressing transversal topics.\n This being said, if you work in other areas, I do have powerful tools that would help you embark your stakeholders and start your <strong>sustainability and circularity journey.</strong>",
     "sector": {
       "agriFood": "Agri-Food, Food, Water & Ocean",
       "constructionEnergy": "Construction & Energy",
@@ -176,6 +202,12 @@
       "planetaryBoundaries": "Planetary Boundaries",
       "title": "Topics"
     }
+  },
+  "WhoAmISection": {
+    "paragraph1": "A <strong>generalist engineer</strong> by training, I managed energy projects for <strong>15 years</strong>, working both on site and in the office.",
+    "paragraph2": "I delivered a wide portfolio of assets, including <strong>biomass cogeneration plants</strong> and <strong>wind farms</strong>, in <strong>large corporate</strong> and <strong>start-up</strong>.",
+    "paragraph3": "Now <strong>self-employed</strong>, I leverage my <strong>transversal skills</strong>, <strong>result-oriented mindset</strong> and enthusiasm to help organisations reduce their environmental impacts with a <strong>structured approach</strong>.",
+    "title": "Who am I"
   },
   "WhySection": {
     "altFigure": "Main risks from climate and environmental pressures and related opportunities",

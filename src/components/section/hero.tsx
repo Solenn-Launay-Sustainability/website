@@ -6,24 +6,29 @@ import { EcoIndexBadge } from "@/components/eco-index-badge";
 import { Button } from "@/components/ui/button";
 import { Text, Title } from "@/components/ui/typography";
 import { ContactInfo } from "../contact-info";
+import { Bold } from "../ui/typography/bold";
 
 async function Hero() {
-  const t = await getTranslations("Hero");
+  const [t, whoAmI] = await Promise.all([
+    getTranslations("Hero"),
+    getTranslations("WhoAmISection"),
+  ]);
 
   return (
     <section
       className="relative flex min-h-screen items-center justify-center px-4"
       id="hero"
     >
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(${heroBg.src})`,
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
-      >
+      <div className="absolute inset-0 z-0">
+        <Image
+          alt=""
+          className="object-cover"
+          fill
+          priority
+          quality={65}
+          sizes="100vw"
+          src={heroBg}
+        />
         <div className="absolute inset-0 bg-linear-to-b from-background/60 via-background/80 to-background" />
       </div>
 
@@ -45,6 +50,27 @@ async function Hero() {
           <Text className="max-w-2xl leading-relaxed" size="lg">
             {t("description")}
           </Text>
+
+          <div className="max-w-2xl space-y-4">
+            <Title as="h2" size="lg">
+              {whoAmI("title")}
+            </Title>
+            <Text>
+              {whoAmI.rich("paragraph1", {
+                strong: (chunks: React.ReactNode) => <Bold>{chunks}</Bold>,
+              })}
+            </Text>
+            <Text>
+              {whoAmI.rich("paragraph2", {
+                strong: (chunks: React.ReactNode) => <Bold>{chunks}</Bold>,
+              })}
+            </Text>
+            <Text>
+              {whoAmI.rich("paragraph3", {
+                strong: (chunks: React.ReactNode) => <Bold>{chunks}</Bold>,
+              })}
+            </Text>
+          </div>
 
           <div className="flex flex-col gap-4 sm:flex-row">
             <Button asChild size="lg">

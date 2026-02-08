@@ -36,6 +36,7 @@ const envSchema = z.object({
   NEXT_PUBLIC_SANITY_PROJECT_ID: z
     .string()
     .min(1, "NEXT_PUBLIC_SANITY_PROJECT_ID is required"),
+  NEXT_PUBLIC_SITE_URL: z.url("NEXT_PUBLIC_SITE_URL must be a valid URL"),
   NODE_ENV: z
     .enum(["development", "production", "test"])
     .default("development"),
@@ -52,6 +53,7 @@ function validateEnv() {
     NEXT_PUBLIC_SANITY_API_VERSION: process.env.NEXT_PUBLIC_SANITY_API_VERSION,
     NEXT_PUBLIC_SANITY_DATASET: process.env.NEXT_PUBLIC_SANITY_DATASET,
     NEXT_PUBLIC_SANITY_PROJECT_ID: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+    NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
     NODE_ENV: process.env.NODE_ENV,
     RESEND_API_KEY: process.env.RESEND_API_KEY,
   });

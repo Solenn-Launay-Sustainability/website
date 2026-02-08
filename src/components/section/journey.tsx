@@ -1,38 +1,48 @@
+"use client";
+
 import { Lightbulb, MapIcon, Search } from "lucide-react";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
+  CarouselDots,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Text, Title } from "@/components/ui/typography";
+import { useIsMobile } from "@/hooks/use-is-mobile";
 
-const journeySteps = [
+const journeyStepItems = [
   {
-    description:
-      "Engage & level up knowledge of your staff, management, stakeholders…",
+    formatTarget: "conference",
     icon: Lightbulb,
-    title: "Raise awareness",
+    key: "raiseAwareness",
   },
   {
-    description:
-      "Assess your main environmental impacts & risks, identify key opportunities.",
+    formatTarget: "bespoke",
     icon: Search,
-    title: "Identify Impacts, Risks & Opportunities (I.R.O.)",
+    key: "identifyIro",
   },
   {
-    description:
-      "Define priority targets, build a roadmap and support implementation.",
+    formatTarget: null,
     icon: MapIcon,
-    title: "Establish & deliver roadmap",
+    key: "establishRoadmap",
   },
-];
+] as const;
 
-async function Journey() {
-  const t = await getTranslations("JourneySection");
+function Journey() {
+  const t = useTranslations("JourneySection");
+  const isMobile = useIsMobile();
+  const journeySteps = journeyStepItems.map((step) => ({
+    description: t(`journeySteps.${step.key}.description`),
+    formatTarget: step.formatTarget,
+    icon: step.icon,
+    key: step.key,
+    title: t(`journeySteps.${step.key}.title`),
+  }));
+
   return (
     <section className="container mx-auto space-y-12 px-4 py-20 md:py-32">
       <div className="space-y-4 text-center" id="journey">
@@ -41,46 +51,92 @@ async function Journey() {
           {t("description")}
         </Text>
       </div>
-      <div className="mx-auto w-full md:hidden">
-        <Carousel>
-          <CarouselContent>
-            {journeySteps.map((step) => (
-              <CarouselItem key={step.title}>
+      {isMobile ? (
+        <div className="mx-auto w-full">
+          <Carousel>
+            <CarouselContent>
+              {journeySteps.map((step) => (
+                <CarouselItem key={step.key}>
+                  {step.formatTarget ? (
+                    <a
+                      className="block rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+                      data-format-link={step.formatTarget}
+                      href={`#format-${step.formatTarget}`}
+                    >
+                      <Card className="cursor-pointer border-2 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-lg">
+                        <CardContent className="space-y-4 pt-6">
+                          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                            <step.icon className="h-6 w-6 text-primary" />
+                          </div>
+                          <Title className="font-semibold text-xl">
+                            {step.title}
+                          </Title>
+                          <Text variant="muted">{step.description}</Text>
+                        </CardContent>
+                      </Card>
+                    </a>
+                  ) : (
+                    <Card className="border-2">
+                      <CardContent className="space-y-4 pt-6">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                          <step.icon className="h-6 w-6 text-primary" />
+                        </div>
+                        <Title className="font-semibold text-xl">
+                          {step.title}
+                        </Title>
+                        <Text variant="muted">{step.description}</Text>
+                      </CardContent>
+                    </Card>
+                  )}
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="mt-3 grid grid-cols-[auto_1fr_auto] items-center gap-4">
+              <CarouselPrevious />
+              <CarouselDots />
+              <CarouselNext />
+            </div>
+          </Carousel>
+        </div>
+      ) : (
+        <div className="grid gap-6 md:grid-cols-3">
+          {journeySteps.map((step) => (
+            <div key={step.key}>
+              {step.formatTarget ? (
+                <a
+                  className="block rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+                  data-format-link={step.formatTarget}
+                  href={`#format-${step.formatTarget}`}
+                >
+                  <Card className="cursor-pointer border-2 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-lg">
+                    <CardContent className="space-y-4 pt-6">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                        <step.icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <Title className="font-semibold" size="lg">
+                        {step.title}
+                      </Title>
+                      <Text variant="muted">{step.description}</Text>
+                    </CardContent>
+                  </Card>
+                </a>
+              ) : (
                 <Card className="border-2">
                   <CardContent className="space-y-4 pt-6">
                     <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                       <step.icon className="h-6 w-6 text-primary" />
                     </div>
-                    <Title className="font-semibold text-xl">
+                    <Title className="font-semibold" size="lg">
                       {step.title}
                     </Title>
                     <Text variant="muted">{step.description}</Text>
                   </CardContent>
                 </Card>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <div className="mt-3 flex gap-4">
-            <CarouselPrevious />
-            <CarouselNext />
-          </div>
-        </Carousel>
-      </div>
-      <div className="hidden gap-6 md:grid md:grid-cols-3">
-        {journeySteps.map((step) => (
-          <Card className="border-2" key={step.title}>
-            <CardContent className="space-y-4 pt-6">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                <step.icon className="h-6 w-6 text-primary" />
-              </div>
-              <Title className="font-semibold" size="lg">
-                {step.title}
-              </Title>
-              <Text variant="muted">{step.description}</Text>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
       {/* Roadmap & Implementation Details */}
       <div className="mt-16 space-y-8">
         <div className="grid gap-8 md:grid-cols-2">

@@ -2,7 +2,6 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import heroBg from "@/assets/images/hero-bg.webp";
 import profile from "@/assets/images/profile.webp";
-import { EcoIndexBadge } from "@/components/eco-index-badge";
 import { Button } from "@/components/ui/button";
 import { Text, Title } from "@/components/ui/typography";
 import { ContactInfo } from "../contact-info";
@@ -91,7 +90,8 @@ async function Hero() {
             width={250}
           />
           <ContactInfo />
-          <EcoIndexBadge />
+          {/* Not good enough to display it 😅, TDOD: find a better way */}
+          {/* <EcoIndexBadge /> */}
         </div>
       </div>
     </section>

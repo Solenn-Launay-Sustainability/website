@@ -67,7 +67,7 @@ HTML reference:
     </div>
 
     <figure class="why-diagram">
-      <img src="/img/risks-opportunities.png"
+      <img src="/img/risks-opportunities.webp"
            alt="Main risks from climate and environmental pressures and related opportunities">
       <figcaption>Key risks and opportunities arising from climate and environmental pressures.</figcaption>
     </figure>

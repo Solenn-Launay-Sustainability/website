@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import centreService from "@/assets/images/testimonials/centre-service-scolaire.png";
+import centreService from "@/assets/images/testimonials/centre-service-scolaire.webp";
 import edf from "@/assets/images/testimonials/edf.webp";
-import edhec from "@/assets/images/testimonials/edhec.png";
-import fondsSolidarite from "@/assets/images/testimonials/fonds-solidarite.png";
+import edhec from "@/assets/images/testimonials/edhec.webp";
+import fondsSolidarite from "@/assets/images/testimonials/fonds-solidarite.webp";
 import mobility from "@/assets/images/testimonials/mobility.webp";
-import om from "@/assets/images/testimonials/om.png";
+import om from "@/assets/images/testimonials/om.webp";
 import parapluie from "@/assets/images/testimonials/parapluie.webp";
 import southEast from "@/assets/images/testimonials/south-east.webp";
 import { Card, CardContent } from "@/components/ui/card";

@@ -1,7 +1,7 @@
 import { PlusCircle, Presentation, Users, Wrench } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import biodiversityCollage from "@/assets/images/biodiversity-collage.webp";
-import circularEconomy from "@/assets/images/circular-economy.png";
+import circularEconomy from "@/assets/images/circular-economy.webp";
 import climateFresk from "@/assets/images/climate-fresk.webp";
 import climatePitch from "@/assets/images/climate-pitch.svg";
 import foodFresk from "@/assets/images/food-fresk.webp";

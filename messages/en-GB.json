@@ -99,6 +99,11 @@
   "footer": {
     "rights": "All rights reserved."
   },
+  "GallerySection": {
+    "description": "A glimpse into real workshop moments: focused teams, active collaboration, and concrete ideas taking shape.",
+    "photoAlt": "Workshop gallery photo {index}",
+    "title": "Moments in Action"
+  },
   "Hero": {
     "description": "I help organisations understand and anticipate bioclimatic risks, reduce their environmental impacts to enhance the robustness of their business models.",
     "discoverMyApproach": "Discover my approach",
@@ -134,17 +139,12 @@
   "Navbar": {
     "contact": "Contact",
     "formats": "Formats",
+    "gallery": "Gallery",
     "home": "Home",
     "journey": "Journey",
-    "scenario": "Scenarios",
     "testimonials": "Testimonials",
     "topics": "Topics",
     "why": "Why"
-  },
-  "ScenarioSection": {
-    "description": "A glimpse into real workshop moments: focused teams, active collaboration, and concrete ideas taking shape.",
-    "photoAlt": "Workshop scenario photo {index}",
-    "title": "Moments in Action"
   },
   "TestimonialsSection": {
     "clients": {

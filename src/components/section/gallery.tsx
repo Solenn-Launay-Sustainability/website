@@ -1,16 +1,16 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import image001 from "@/assets/images/scenario/image001.jpg";
-import image014 from "@/assets/images/scenario/image014.jpg";
-import image015 from "@/assets/images/scenario/image015.jpg";
-import image016 from "@/assets/images/scenario/image016.jpg";
-import image017 from "@/assets/images/scenario/image017.jpg";
-import image018 from "@/assets/images/scenario/image018.jpg";
-import image019 from "@/assets/images/scenario/image019.jpg";
+import image001 from "@/assets/images/gallery/image001.webp";
+import image014 from "@/assets/images/gallery/image014.webp";
+import image015 from "@/assets/images/gallery/image015.webp";
+import image016 from "@/assets/images/gallery/image016.webp";
+import image017 from "@/assets/images/gallery/image017.webp";
+import image018 from "@/assets/images/gallery/image018.webp";
+import image019 from "@/assets/images/gallery/image019.webp";
 import { cn } from "@/lib/utils";
 import { Text, Title } from "../ui/typography";
 
-const scenarioPhotos = [
+const galleryPhotos = [
   { image: image001, layout: "md:col-span-7 md:row-span-2", position: null },
   { image: image014, layout: "md:col-span-5 md:row-span-2", position: null },
   { image: image015, layout: "md:col-span-4 md:row-span-2", position: null },
@@ -28,12 +28,12 @@ const scenarioPhotos = [
   },
 ] as const;
 
-async function Scenario() {
-  const t = await getTranslations("ScenarioSection");
+async function Gallery() {
+  const t = await getTranslations("GallerySection");
 
   return (
     <section className="container mx-auto px-4 py-20 md:py-32">
-      <div className="mx-auto max-w-6xl space-y-10" id="scenario">
+      <div className="mx-auto max-w-6xl space-y-10" id="gallery">
         <div className="space-y-4 text-center">
           <Title as="h2" size="xl">
             {t("title")}
@@ -44,7 +44,7 @@ async function Scenario() {
         </div>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:auto-rows-[170px] md:grid-cols-12">
-          {scenarioPhotos.map((photo, index) => (
+          {galleryPhotos.map((photo, index) => (
             <figure
               className={cn(
                 "group relative min-h-60 overflow-hidden rounded-2xl border bg-card/30 shadow-sm",
@@ -72,4 +72,4 @@ async function Scenario() {
   );
 }
 
-export { Scenario };
+export { Gallery };

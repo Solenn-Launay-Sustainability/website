@@ -11,6 +11,7 @@ const sections = [
   { id: "journey", labelKey: "journey" },
   { id: "topics", labelKey: "topics" },
   { id: "formats", labelKey: "formats" },
+  { id: "gallery", labelKey: "gallery" },
   { id: "testimonials", labelKey: "testimonials" },
   { id: "contact", labelKey: "contact" },
 ] as const;
@@ -88,7 +89,7 @@ function Navbar() {
                 >
                   {t(section.labelKey)}
                   {activeSection === section.id && (
-                    <span className="absolute inset-x-1 -bottom-[calc(0.5rem+1px)] h-0.5 rounded-full bg-primary" />
+                    <span className="absolute inset-x-1 -bottom-2.25 h-0.5 rounded-full bg-primary" />
                   )}
                 </button>
               </li>

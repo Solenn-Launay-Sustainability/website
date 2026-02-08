@@ -12,7 +12,7 @@ type TitleProps<T extends TitleTag = "h2"> = React.ComponentProps<T> &
     as?: T;
   };
 
-const titleVariants = cva("font-bold", {
+const titleVariants = cva("whitespace-pre-line font-bold", {
   defaultVariants: {
     size: "default",
     variant: "default",

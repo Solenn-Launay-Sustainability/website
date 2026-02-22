@@ -161,7 +161,8 @@
       "client5": "South East London, chamber of commerce",
       "client6": "Fonds de solidarité FTQ",
       "client7": "EDHEC Business School",
-      "client8": "Centre de services scolaire, Marguerite-Bourgeoys"
+      "client8": "Centre de services scolaire, Marguerite-Bourgeoys",
+      "client9": "SKF"
     },
     "testimonials": {
       "testimonial1": {
@@ -207,6 +208,7 @@
     "paragraph1": "A <strong>generalist engineer</strong> by training, I managed energy projects for <strong>15 years</strong>, working both on site and in the office.",
     "paragraph2": "I delivered a wide portfolio of assets, including <strong>biomass cogeneration plants</strong> and <strong>wind farms</strong>, in <strong>large corporate</strong> and <strong>start-up</strong>.",
     "paragraph3": "Now <strong>self-employed</strong>, I leverage my <strong>transversal skills</strong>, <strong>result-oriented mindset</strong> and enthusiasm to help organisations reduce their environmental impacts with a <strong>structured approach</strong>.",
+    "paragraph4": "I work both in English and in French (my native language), in person or remotely.",
     "title": "Who am I"
   },
   "WhySection": {

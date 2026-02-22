@@ -7,6 +7,7 @@ import fondsSolidarite from "@/assets/images/testimonials/fonds-solidarite.webp"
 import mobility from "@/assets/images/testimonials/mobility.webp";
 import om from "@/assets/images/testimonials/om.webp";
 import parapluie from "@/assets/images/testimonials/parapluie.webp";
+import skf from "@/assets/images/testimonials/skf.webp";
 import southEast from "@/assets/images/testimonials/south-east.webp";
 import { Card, CardContent } from "@/components/ui/card";
 import { Text, Title } from "@/components/ui/typography";
@@ -49,6 +50,10 @@ async function Testimonials() {
       image: om,
       link: "https://www.linkedin.com/posts/solenn-launay_jourdelaterre-activity-7196687687704002560-jYst/?rcm=ACoAAAJ8SjoB2t_TfZRNTBXwnFvBh_dGAb7IMdo",
       name: t("clients.client3"),
+    },
+    {
+      image: skf,
+      name: t("clients.client9"),
     },
     {
       image: edf,

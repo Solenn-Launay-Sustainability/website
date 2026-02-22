@@ -69,6 +69,7 @@ async function Hero() {
                 strong: (chunks: React.ReactNode) => <Bold>{chunks}</Bold>,
               })}
             </Text>
+            <Text>{whoAmI("paragraph4")}</Text>
           </div>
 
           <div className="flex flex-col gap-4 sm:flex-row">

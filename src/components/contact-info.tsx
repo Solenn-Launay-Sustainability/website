@@ -10,16 +10,14 @@ function ContactInfo() {
   const contactInfo = {
     email: "launaysolenn@yahoo.fr",
     linkedin: "https://www.linkedin.com/in/solenn-launay/",
-    phone: "+44(0) 749.334.3282",
+    phone: "+33 6 20 67 55 83",
   };
 
   return (
     <div className="space-y-3 rounded-lg border bg-card/80 p-6 shadow-lg backdrop-blur-sm max-lg:w-fit">
       <a
         className="flex items-center gap-3 text-sm transition-colors hover:text-primary"
-        href={`tel:${contactInfo.phone
-          .replace(/\(0\)/, "")
-          .replace(/[^+\d]/g, "")}`}
+        href={`tel:${contactInfo.phone.replace(/[^+\d]/g, "")}`}
       >
         <Phone className="size-4" />
         <span>{contactInfo.phone}</span>
